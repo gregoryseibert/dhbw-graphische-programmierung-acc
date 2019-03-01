@@ -85,6 +85,34 @@
 		    ALIGNMENT_FLOAT64_IEEE 8 
 		/end MOD_COMMON
 
+		/begin CHARACTERISTIC components.Driver.inGaspedPosition
+			/* long identifier    */ ""
+			/* type               */ VALUE
+			/* ecu address        */ 0x452030
+			/* record layout      */ STANDARD_VALUE_R32
+			/* max diff value     */ 0.0
+			/* conversion         */ esdl_ident
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			/begin IF_DATA E_TARGET
+			    DP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 0
+			/end IF_DATA
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC components.Driver.inBreakpedPosition
+			/* long identifier    */ ""
+			/* type               */ VALUE
+			/* ecu address        */ 0x45202C
+			/* record layout      */ STANDARD_VALUE_R32
+			/* max diff value     */ 0.0
+			/* conversion         */ esdl_ident
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			/begin IF_DATA E_TARGET
+			    DP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 1
+			/end IF_DATA
+		/end CHARACTERISTIC
+
 		/begin CHARACTERISTIC components.Module.Component_instance.TrackSize
 			/* long identifier    */ ""
 			/* type               */ VALUE
@@ -195,34 +223,6 @@
 			/end IF_DATA
 		/end CHARACTERISTIC
 
-		/begin MEASUREMENT components.Driver.inGaspedPosition
-			/* long identifier    */ ""
-			/* datatype           */ FLOAT32_IEEE
-			/* conversion         */ esdl_ident
-			/* resolution         */ 1
-			/* accuracy           */ 100.0
-			/* lower limit        */ -3.4028234663852886E+38
-			/* upper limit        */ 3.4028234663852886E+38
-			ECU_ADDRESS 0x45202C
-			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 0
-			/end IF_DATA
-		/end MEASUREMENT
-
-		/begin MEASUREMENT components.Driver.inBreakpedPosition
-			/* long identifier    */ ""
-			/* datatype           */ FLOAT32_IEEE
-			/* conversion         */ esdl_ident
-			/* resolution         */ 1
-			/* accuracy           */ 100.0
-			/* lower limit        */ -3.4028234663852886E+38
-			/* upper limit        */ 3.4028234663852886E+38
-			ECU_ADDRESS 0x452028
-			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 1
-			/end IF_DATA
-		/end MEASUREMENT
-
 		/begin MEASUREMENT components.Driver.turnAccOn
 			/* long identifier    */ ""
 			/* datatype           */ UBYTE
@@ -231,7 +231,7 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ 0
 			/* upper limit        */ 1
-			ECU_ADDRESS 0x452032
+			ECU_ADDRESS 0x45202A
 			BIT_MASK 0x1
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 2
@@ -246,7 +246,7 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ 0
 			/* upper limit        */ 1
-			ECU_ADDRESS 0x452031
+			ECU_ADDRESS 0x452029
 			BIT_MASK 0x1
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 3
@@ -261,7 +261,7 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ 0
 			/* upper limit        */ 1
-			ECU_ADDRESS 0x452030
+			ECU_ADDRESS 0x452028
 			BIT_MASK 0x1
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 4
@@ -488,14 +488,16 @@
 		
 		/begin FUNCTION components.Driver
 			""
+			/begin DEF_CHARACTERISTIC
+				components.Driver.inGaspedPosition
+				components.Driver.inBreakpedPosition
+			/end DEF_CHARACTERISTIC
 			/begin OUT_MEASUREMENT
 				components.breakpedMessage.breakpedPosition
 				components.gaspedMessage.gaspedPosition
 			/end OUT_MEASUREMENT
 			/begin LOC_MEASUREMENT
 				components.Driver.accState
-				components.Driver.inBreakpedPosition
-				components.Driver.inGaspedPosition
 				components.Driver.turnAccOff
 				components.Driver.turnAccOn
 			/end LOC_MEASUREMENT
@@ -582,10 +584,12 @@
 		
 		/begin GROUP components.Driver
 			""
+			/begin REF_CHARACTERISTIC
+				components.Driver.inGaspedPosition
+				components.Driver.inBreakpedPosition
+			/end REF_CHARACTERISTIC
 			/begin REF_MEASUREMENT
 				components.Driver.accState
-				components.Driver.inBreakpedPosition
-				components.Driver.inGaspedPosition
 				components.Driver.turnAccOff
 				components.Driver.turnAccOn
 			/end REF_MEASUREMENT

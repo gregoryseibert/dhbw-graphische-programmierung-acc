@@ -3,8 +3,8 @@ package components;
 static class Driver 
 writes gaspedMessage.gaspedPosition , breakpedMessage.breakpedPosition{
 	
-	real inGaspedPosition = 0.0;
-	real inBreakpedPosition = 0.0;
+	characteristic real inGaspedPosition = 0.0;
+	characteristic real inBreakpedPosition = 0.0;
 	
 	boolean turnAccOn = false;
 	

@@ -12,9 +12,11 @@
       </Documents>
     </Item>
   </PluginData>
-  <RecentExperiments xsi:type="ETAS.EE.Data.FileReferenceListType" />
+  <RecentExperiments xsi:type="ETAS.EE.Data.FileReferenceListType">
+    <Item xsi:type="ETAS.EE.Data.FileReferenceType" id="ID285a08e1-7c6c-4d15-9866-8155f267fb9a" path="C:\Users\Gregory\Documents\graphisches-programmieren-acc\Graph_Progr\experiments\Experiments\system\TestDriver_PC\TestDriver_PC.eex" hintPath="..\..\Experiments\system\TestDriver_PC\TestDriver_PC.eex" />
+  </RecentExperiments>
   <WorkspaceInfo xsi:type="ETAS.EE.Data.WorkspaceInfoType">
-    <DateTime xsi:type="ETAS.EE.Data.DateTimeInfoType" id="ID38dd75bb-b1b1-49af-a4d9-5a7f9a766b08" Created="2019-02-28T10:49:27.751Z" LastOpened="2019-03-01T10:43:15.823Z" LastSaved="2019-02-28T10:49:32.786Z" />
+    <DateTime xsi:type="ETAS.EE.Data.DateTimeInfoType" id="ID38dd75bb-b1b1-49af-a4d9-5a7f9a766b08" Created="2019-02-28T10:49:27.751Z" LastOpened="2019-03-01T10:52:07.904Z" LastSaved="2019-03-01T10:52:07.772Z" />
     <Version xsi:type="ETAS.EE.Data.VersionInfoType" id="ID02012046-1b8d-411e-a72e-037f7fa42a16" Created="3.7.6.132" LastSaved="3.7.6.132" MinRequired="3.3.1" />
   </WorkspaceInfo>
 </Workspace>
