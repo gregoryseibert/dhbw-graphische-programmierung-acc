@@ -46,4 +46,14 @@ class Component {
 	public real get_dh() {
 		return dh; // Main/get_dh 1
 	}
+
+	@generated("blockdiagram")
+	public real getPosition() {
+		return s; // Main/getPosition 1
+	}
+
+	@generated("blockdiagram")
+	public real getTracksize() {
+		return TrackSize; // Main/getTracksize 1
+	}
 }

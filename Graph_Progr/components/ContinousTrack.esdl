@@ -1,7 +1,7 @@
 package components;
 
 static class ContinousTrack {
-	static real totalDistance = 0.0;
+	real totalDistance = 0.0;
 	
 	public real getTrackPosition(real position, real ds, real trackSize) {
 		totalDistance += ds;
