@@ -1,0 +1,31 @@
+package components;
+
+static class ComponentTest {
+	Component tester;
+	characteristic real calc_brake = 0.0;
+	characteristic real calc_power = 0.0;
+	characteristic real calc_dtime = 0.0;
+	real get_v_return;
+	real get_ds_return;
+	real get_dh_return;
+
+	@thread
+	public void calc() {
+		tester.calc(calc_brake, calc_power, calc_dtime);
+	}
+
+	@thread
+	public void get_v() {
+		get_v_return = tester.get_v();
+	}
+
+	@thread
+	public void get_ds() {
+		get_ds_return = tester.get_ds();
+	}
+
+	@thread
+	public void get_dh() {
+		get_dh_return = tester.get_dh();
+	}
+}

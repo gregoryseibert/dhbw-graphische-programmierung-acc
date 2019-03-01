@@ -1,0 +1,29 @@
+classType components.Module
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin active
+	}
+	complexIdentifier Component_instance at (421, 151) size (14, 8) {
+		label at (0, 1)
+		methodCall components.Component.calc {
+			argumentPin brake at (left, 0) argumentPin power at (left, 1) argumentPin dtime at (left, 2) sequenceCall {
+				inPin
+			}
+		}
+		methodCall components.Component.get_v {
+			returnPin at (right, 0) sequenceCall {
+				inPin
+			}
+		}
+		methodCall components.Component.get_ds {
+			returnPin at (right, 1) sequenceCall {
+				inPin
+			}
+		}
+		methodCall components.Component.get_dh {
+			returnPin at (right, 2) sequenceCall {
+				inPin
+			}
+		}
+	}
+}

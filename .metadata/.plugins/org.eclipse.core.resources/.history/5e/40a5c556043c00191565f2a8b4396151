@@ -1,23 +1,8 @@
 classType components.Component
 blockdiagramSpecification Main {
-	methodBody calc {
-		outPin {
-			connection_10, connection_18, connection_58, connection_52, connection_40, connection_45, connection_1, connection_23
-		}
-	}
-	methodBody get_v {
-		outPin {
-			connection_100
-		}
-	}
-	methodBody get_ds {
-		outPin {
-			connection_102
-		}
-	}
-	methodBody get_dh {
+	methodBody vCar {
 		outPin active {
-			connection_104
+			connection_10, connection_18, connection_58, connection_52, connection_40, connection_45, connection_1, connection_23
 		}
 	}
 	simpleIdentifier s at (131, 715) {
@@ -102,7 +87,7 @@ blockdiagramSpecification Main {
 		label at (0, -1)
 		inPin connection_11
 		outPin {
-			connection_44, connection_103, connection_16
+			connection_44, connection_16
 		}
 		sequenceCall {
 			inPin connection_10
@@ -160,7 +145,7 @@ blockdiagramSpecification Main {
 		label at (0, -1)
 		inPin connection_19
 		outPin {
-			connection_105, connection_17
+			connection_17
 		}
 		sequenceCall {
 			inPin connection_18
@@ -218,7 +203,7 @@ blockdiagramSpecification Main {
 			inPin
 		}
 	}
-	literal Numeric "9.81" at (461, 293) size (49, 0) {
+	literal Numeric "9.81" at (431, 293) size (49, 0) {
 		outPin {
 			connection_32
 		}
@@ -257,7 +242,7 @@ blockdiagramSpecification Main {
 			bendpoints (0, 10)
 		}
 		inPin connection_70 {
-			bendpoints (60, 0), (60, -110)
+			bendpoints (0, -40)
 		}
 		outPin {
 			connection_39
@@ -291,7 +276,7 @@ blockdiagramSpecification Main {
 		label at (0, -1)
 		inPin connection_41
 		outPin {
-			connection_101, connection_42
+			connection_42
 		}
 		sequenceCall at (-10, -24) {
 			inPin connection_40
@@ -317,9 +302,7 @@ blockdiagramSpecification Main {
 	}
 	simpleIdentifier EngineMomentum at (121, 111) {
 		label at (0, -9)
-		inPin connection_99 {
-			bendpoints (0, -60)
-		}
+		inPin connection_99
 		inPin connection_55 {
 			bendpoints (0, -70)
 		}
@@ -362,6 +345,24 @@ blockdiagramSpecification Main {
 			inPin
 		}
 	}
+	simpleIdentifier components.DeltaTimeService.deltaT at (591, 125) {
+		label at (0, -1)
+		inPin outPin {
+			connection_70
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier components.DeltaTimeService.deltaT at (81, 605) {
+		label at (0, -1)
+		inPin outPin {
+			connection_71
+		}
+		sequenceCall {
+			inPin
+		}
+	}
 	addition at (181, 6) {
 		inPin connection_80
 		inPin connection_98 {
@@ -376,65 +377,22 @@ blockdiagramSpecification Main {
 			connection_80
 		}
 	}
-	methodArgumentIdentifier calc.brake at (31, 45) {
+	simpleIdentifier breakposTest at (31, 45) {
 		label at (0, -1)
-		outPin {
+		inPin outPin {
 			connection_98
 		}
 		sequenceCall {
 			inPin
 		}
 	}
-	methodArgumentIdentifier calc.power at (41, 175) {
+	simpleIdentifier components.gaspedMessage.gaspedPosition at (41, 115) {
 		label at (0, -1)
 		outPin {
 			connection_99
 		}
 		sequenceCall {
 			inPin
-		}
-	}
-	methodArgumentIdentifier calc.dtime at (581, 195) {
-		label at (0, -1)
-		outPin {
-			connection_70
-		}
-		sequenceCall {
-			inPin
-		}
-	}
-	methodArgumentIdentifier calc.dtime at (81, 605) {
-		label at (0, -1)
-		outPin {
-			connection_71
-		}
-		sequenceCall {
-			inPin
-		}
-	}
-	return at (961, 85) {
-		label at (0, 0)
-		inPin connection_101
-		sequenceCall {
-			inPin connection_100
-		}
-	}
-	return at (491, 655) {
-		label at (0, 0)
-		inPin connection_103 {
-			bendpoints (0, 50)
-		}
-		sequenceCall {
-			inPin connection_102
-		}
-	}
-	return at (331, 345) {
-		label at (0, 0)
-		inPin connection_105 {
-			bendpoints (0, -50)
-		}
-		sequenceCall {
-			inPin connection_104
 		}
 	}
 }
