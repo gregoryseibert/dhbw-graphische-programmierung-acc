@@ -12,10 +12,10 @@ reads breakpedMessage.breakpedPosition, gaspedMessage.gaspedPosition {
 	@thread
 	@generated("blockdiagram")
 	public void calc() {
-		trackPosition = ContinousTrack.getTrackPosition(Component_instance.getPosition(), Component_instance.get_ds(), Component_instance.getTracksize()); // Main/calc 1
-		dh = Component_instance.get_dh(); // Main/calc 2
-		v = Component_instance.get_v(); // Main/calc 3
-		totalDistance = ContinousTrack.getTotalDistance(); // Main/calc 4
-		Component_instance.calc(breakpedMessage.breakpedPosition, gaspedMessage.gaspedPosition, DeltaTimeService.deltaT); // Main/calc 5
+		Component_instance.calc(breakpedMessage.breakpedPosition, gaspedMessage.gaspedPosition, DeltaTimeService.deltaT); // Main/calc 1
+		trackPosition = ContinousTrack.getTrackPosition(Component_instance.getPosition(), Component_instance.get_ds(), Component_instance.getTracksize()); // Main/calc 2
+		dh = Component_instance.get_dh(); // Main/calc 3
+		v = Component_instance.get_v(); // Main/calc 4
+		totalDistance = ContinousTrack.getTotalDistance(); // Main/calc 5
 	}
 }

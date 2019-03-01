@@ -2,7 +2,7 @@ classType components.Module
 blockdiagramSpecification Main {
 	methodBody calc {
 		outPin active {
-			connection_9, connection_15, connection_17, connection_19, connection_25
+			connection_25, connection_9, connection_15, connection_17, connection_19
 		}
 	}
 	simpleIdentifier trackPosition at (541, 55) {
