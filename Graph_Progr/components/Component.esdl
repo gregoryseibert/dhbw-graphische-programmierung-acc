@@ -31,12 +31,11 @@ reads gaspedMessage.gaspedPosition {
 		h = Landscape.getAt(s); // Main/vCar 3
 		momentum = EngineMomentum.getAt(gaspedMessage.gaspedPosition, v); // Main/vCar 4
 		v = ((3.6 * (BrakeMomentum.getAt((0.0 + breakposTest)) + momentum + AirFriction.getAt(v) + (9.81 * (dh / ds))) * DeltaTimeService.deltaT) + v); // Main/vCar 5
-		s = (ds + s); // Main/vCar 6
-		if (s > TrackSize) {
-			s = 0.0; // Main/vCar 7/if-then 1
-		} // Main/vCar 7
+		
+		s = ContinousTrack.getTrackPosition(s, ds, TrackSize); // Main/vCar 6
+
 		if (v < 0.0) {
-			v = 0.0; // Main/vCar 8/if-then 1
-		} // Main/vCar 8
+			v = 0.0; // Main/vCar 7/if-then 1
+		} // Main/vCar 7
 	}
 }
