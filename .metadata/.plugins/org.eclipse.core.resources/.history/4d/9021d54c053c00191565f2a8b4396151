@@ -1,23 +1,8 @@
 classType components.Component
 blockdiagramSpecification Main {
-	methodBody calc {
-		outPin {
-			connection_10, connection_18, connection_58, connection_52, connection_40, connection_45, connection_1, connection_23
-		}
-	}
-	methodBody get_v {
-		outPin {
-			connection_100
-		}
-	}
-	methodBody get_ds {
-		outPin {
-			connection_102
-		}
-	}
-	methodBody get_dh {
+	methodBody vCar {
 		outPin active {
-			connection_104
+			connection_10, connection_18, connection_58, connection_52, connection_40, connection_45, connection_1, connection_23
 		}
 	}
 	simpleIdentifier s at (131, 715) {
@@ -102,7 +87,7 @@ blockdiagramSpecification Main {
 		label at (0, -1)
 		inPin connection_11
 		outPin {
-			connection_44, connection_103, connection_16
+			connection_44, connection_16
 		}
 		sequenceCall {
 			inPin connection_10
@@ -160,7 +145,7 @@ blockdiagramSpecification Main {
 		label at (0, -1)
 		inPin connection_19
 		outPin {
-			connection_105, connection_17
+			connection_17
 		}
 		sequenceCall {
 			inPin connection_18
@@ -291,7 +276,7 @@ blockdiagramSpecification Main {
 		label at (0, -1)
 		inPin connection_41
 		outPin {
-			connection_101, connection_42
+			connection_42
 		}
 		sequenceCall at (-10, -24) {
 			inPin connection_40
@@ -317,9 +302,7 @@ blockdiagramSpecification Main {
 	}
 	simpleIdentifier EngineMomentum at (121, 111) {
 		label at (0, -9)
-		inPin connection_99 {
-			bendpoints (0, -60)
-		}
+		inPin connection_99
 		inPin connection_55 {
 			bendpoints (0, -70)
 		}
@@ -376,7 +359,7 @@ blockdiagramSpecification Main {
 			connection_80
 		}
 	}
-	methodArgumentIdentifier calc.brake at (31, 45) {
+	methodArgumentIdentifier vCar.brake at (31, 45) {
 		label at (0, -1)
 		outPin {
 			connection_98
@@ -385,7 +368,7 @@ blockdiagramSpecification Main {
 			inPin
 		}
 	}
-	methodArgumentIdentifier calc.power at (41, 175) {
+	methodArgumentIdentifier vCar.power at (41, 115) {
 		label at (0, -1)
 		outPin {
 			connection_99
@@ -394,7 +377,7 @@ blockdiagramSpecification Main {
 			inPin
 		}
 	}
-	methodArgumentIdentifier calc.dtime at (581, 195) {
+	methodArgumentIdentifier vCar.dtime at (581, 195) {
 		label at (0, -1)
 		outPin {
 			connection_70
@@ -403,38 +386,13 @@ blockdiagramSpecification Main {
 			inPin
 		}
 	}
-	methodArgumentIdentifier calc.dtime at (81, 605) {
+	methodArgumentIdentifier vCar.dtime at (81, 605) {
 		label at (0, -1)
 		outPin {
 			connection_71
 		}
 		sequenceCall {
 			inPin
-		}
-	}
-	return at (961, 85) {
-		label at (0, 0)
-		inPin connection_101
-		sequenceCall {
-			inPin connection_100
-		}
-	}
-	return at (491, 655) {
-		label at (0, 0)
-		inPin connection_103 {
-			bendpoints (0, 50)
-		}
-		sequenceCall {
-			inPin connection_102
-		}
-	}
-	return at (331, 345) {
-		label at (0, 0)
-		inPin connection_105 {
-			bendpoints (0, -50)
-		}
-		sequenceCall {
-			inPin connection_104
 		}
 	}
 }

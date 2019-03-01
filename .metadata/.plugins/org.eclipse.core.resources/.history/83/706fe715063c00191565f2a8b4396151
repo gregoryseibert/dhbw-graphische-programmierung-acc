@@ -10,14 +10,12 @@ blockdiagramSpecification Main {
 			connection_100
 		}
 	}
-	methodBody get_ds {
-		outPin {
-			connection_102
-		}
-	}
 	methodBody get_dh {
+		outPin
+	}
+	methodBody get_ds {
 		outPin active {
-			connection_104
+			connection_102
 		}
 	}
 	simpleIdentifier s at (131, 715) {
@@ -160,7 +158,7 @@ blockdiagramSpecification Main {
 		label at (0, -1)
 		inPin connection_19
 		outPin {
-			connection_105, connection_17
+			connection_17
 		}
 		sequenceCall {
 			inPin connection_18
@@ -426,15 +424,6 @@ blockdiagramSpecification Main {
 		}
 		sequenceCall {
 			inPin connection_102
-		}
-	}
-	return at (331, 345) {
-		label at (0, 0)
-		inPin connection_105 {
-			bendpoints (0, -50)
-		}
-		sequenceCall {
-			inPin connection_104
 		}
 	}
 }
