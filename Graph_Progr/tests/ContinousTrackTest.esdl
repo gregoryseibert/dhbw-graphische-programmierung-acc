@@ -15,7 +15,7 @@ static class ComponentTests {
 	 */
 	@Test
 	public void testIncreaseDistance() {
-		s = 0.0;
+		s = 500.0;
 		ds = 10.0;
 		
 		newPosition = ContinousTrack.getTrackPosition(s, ds, TrackSize);
@@ -28,7 +28,7 @@ static class ComponentTests {
 	 */
 	@Test
 	public void testDecreaseDistance() {
-		s = 0.0;
+		s = 500.0;
 		ds = -10.0;
 		
 		newPosition = ContinousTrack.getTrackPosition(s, ds, TrackSize);
@@ -47,5 +47,18 @@ static class ComponentTests {
 		newPosition = ContinousTrack.getTrackPosition(s, ds, TrackSize);
 
 		Assert.assertTrue(newPosition == s + ds - TrackSize);
+	}
+
+	/*
+	 * check decrease distance reset works fine
+	 */
+	@Test
+	public void testDecreaseDistanceReset() {
+		s = 5.0;
+		ds = -15.0;
+		
+		newPosition = ContinousTrack.getTrackPosition(s, ds, TrackSize);
+
+		Assert.assertTrue(newPosition == TrackSize - s + ds);
 	}
 }

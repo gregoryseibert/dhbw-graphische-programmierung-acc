@@ -10,6 +10,10 @@ static class ContinousTrack {
 			return position + ds - trackSize;
 		}
 		
+		if (position + ds < 0.0) {
+			return trackSize - position + ds;
+		}
+		
 		return (ds + position);
 	}
 	
