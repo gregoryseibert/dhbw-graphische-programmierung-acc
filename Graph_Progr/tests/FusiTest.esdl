@@ -1,6 +1,6 @@
 package tests;
 
-import AssertionLibrary.Assert;
+import assertLib.Assert;
 import components.FuSi;
 
 static class FusiTest {
