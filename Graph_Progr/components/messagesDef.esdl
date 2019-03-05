@@ -24,3 +24,6 @@ data interface accMomentumMessage {
 	
 }
 
+data interface accStateChange{
+	boolean newState=false;
+}
