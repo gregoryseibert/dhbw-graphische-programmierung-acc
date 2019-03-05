@@ -1,0 +1,40 @@
+classType components.crashDetect
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin active {
+			connection_7
+		}
+	}
+	simpleIdentifier components.mes_crashDetect.crash at (161, 325) {
+		label at (0, -1)
+		outPin {
+			connection_6
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier components.mes_accState.^active at (621, 325) {
+		label at (0, -1)
+		inPin connection_8 {
+			bendpoints (40, 0), (40, 10)
+		}
+		sequenceCall {
+			inPin connection_7
+		}
+	}
+	complexIdentifier FuSi_instance_2 at (391, 311) size (14, 8) {
+		label at (0, 1)
+		methodCall components.FuSi.crashHandling {
+			argumentPin crash at (left, 0) connection_6 {
+				bendpoints (90, 0), (90, -10)
+			}
+			returnPin at (right, 0) {
+				connection_8
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+}
