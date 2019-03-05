@@ -4,7 +4,7 @@
     <PropertySet name="WorkspaceHandling">
       <Property name="OpenMode" type="StringProperty">LastExperiment</Property>
       <Property name="DefaultExperiment" type="StringProperty" />
-      <Property name="LastWorkspaceLocation" type="StringProperty">C:\Users\Gregory\Documents\graphisches-programmieren-acc\Graph_Progr\experiments\Workspaces\TestDriver_PC\TestDriver_PC.eew</Property>
+      <Property name="LastWorkspaceLocation" type="StringProperty">C:\Users\Melanie\Documents\graphisches-programmieren-acc\Graph_Progr\experiments\Workspaces\TestDriver_PC\TestDriver_PC.eew</Property>
     </PropertySet>
     <PropertySet name="ETargetINTECRIO">
       <PropertySet name="Options">
