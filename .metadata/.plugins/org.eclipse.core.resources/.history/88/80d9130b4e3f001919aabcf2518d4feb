@@ -1,7 +1,0 @@
-package components;
-
-class DriverBlock {
-	@generated("blockdiagram")
-	public void calc(real in dtime) {
-	}
-}

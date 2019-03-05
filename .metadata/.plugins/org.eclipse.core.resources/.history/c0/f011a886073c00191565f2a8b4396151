@@ -1,7 +1,0 @@
-package components;
-
-class Module {
-	@generated("blockdiagram")
-	public void calc() {
-	}
-}
