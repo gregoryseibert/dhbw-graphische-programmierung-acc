@@ -13,6 +13,9 @@ class ACC {
 		this.isActive = isActive;
 		
 		if(!isActive) {
+			this.prevBrakepedPosition = brakepedPosition;
+			this.prevGaspedPosition = gaspedPosition;
+		
 			return;
 		}
 		
