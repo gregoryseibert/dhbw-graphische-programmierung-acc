@@ -1,0 +1,12 @@
+Component components.ContinuousTrack size ( 14 , 8 ) {
+	labelPosition ( 0 , 1 )
+	methodLayout getTrackPosition {
+		pin position ( Left , 0 )
+		pin ds ( Left , 1 )
+		pin trackSize ( Left , 2 )
+		pin getTrackPosition ( Right , 0 )
+	}
+	methodLayout getTotalDistance {
+		pin getTotalDistance ( Right , 1 )
+	}
+}

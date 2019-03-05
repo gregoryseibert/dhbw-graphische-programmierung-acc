@@ -56,7 +56,7 @@
 		        QP_BLOB 1
 		    /end SOURCE
 		    /begin TP_BLOB
-		         /* programm id */ 1300250082
+		         /* programm id */ 1300250594
 		         /* target id   */ 7
 		         /*             */ 0 2 0
 		    /end TP_BLOB
@@ -88,7 +88,7 @@
 		/begin CHARACTERISTIC components.Driver.inGaspedPosition
 			/* long identifier    */ ""
 			/* type               */ VALUE
-			/* ecu address        */ 0x4520A8
+			/* ecu address        */ 0x4530E4
 			/* record layout      */ STANDARD_VALUE_R32
 			/* max diff value     */ 0.0
 			/* conversion         */ esdl_ident
@@ -102,7 +102,7 @@
 		/begin CHARACTERISTIC components.Driver.inBreakpedPosition
 			/* long identifier    */ ""
 			/* type               */ VALUE
-			/* ecu address        */ 0x4520A4
+			/* ecu address        */ 0x4530E0
 			/* record layout      */ STANDARD_VALUE_R32
 			/* max diff value     */ 0.0
 			/* conversion         */ esdl_ident
@@ -113,24 +113,53 @@
 			/end IF_DATA
 		/end CHARACTERISTIC
 
-		/begin CHARACTERISTIC components.Module.Component_instance.TrackSize
+		/begin CHARACTERISTIC components.Driver.accIsActive
 			/* long identifier    */ ""
 			/* type               */ VALUE
-			/* ecu address        */ 0x435120
+			/* ecu address        */ 0x4530E8
+			/* record layout      */ STANDARD_VALUE_U8
+			/* max diff value     */ 0.0
+			/* conversion         */ esdl_ident
+			/* lower limit        */ 0
+			/* upper limit        */ 1
+			BIT_MASK 0x1
+			/begin IF_DATA E_TARGET
+			    DP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 2
+			/end IF_DATA
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC components.Driver.accTargetSpeed
+			/* long identifier    */ ""
+			/* type               */ VALUE
+			/* ecu address        */ 0x4530DC
 			/* record layout      */ STANDARD_VALUE_R32
 			/* max diff value     */ 0.0
 			/* conversion         */ esdl_ident
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
 			/begin IF_DATA E_TARGET
-			    DP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 4 1000 0 1000 1
+			    DP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 3
+			/end IF_DATA
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC components.Module.Component_instance.TrackSize
+			/* long identifier    */ ""
+			/* type               */ VALUE
+			/* ecu address        */ 0x435260
+			/* record layout      */ STANDARD_VALUE_R32
+			/* max diff value     */ 0.0
+			/* conversion         */ esdl_ident
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			/begin IF_DATA E_TARGET
+			    DP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 6 1000 0 1000 1
 			/end IF_DATA
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC components.Module.Component_instance.EngineMomentum
 			/* long identifier    */ ""
 			/* type               */ MAP
-			/* ecu address        */ 0x43518C
+			/* ecu address        */ 0x4352CC
 			/* record layout      */ STANDARD_MAP_R32R32R32
 			/* max diff value     */ 0.0
 			/* conversion         */ esdl_ident
@@ -153,14 +182,14 @@
 				/* upper limit        */ 3.4028234663852886E+38
 			/end AXIS_DESCR
 			/begin IF_DATA E_TARGET
-			    DP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 4 1000 0 1000 7
+			    DP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 6 1000 0 1000 7
 			/end IF_DATA
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC components.Module.Component_instance.BrakeMomentum
 			/* long identifier    */ ""
 			/* type               */ CURVE
-			/* ecu address        */ 0x435158
+			/* ecu address        */ 0x435298
 			/* record layout      */ STANDARD_CURVE_R32R32
 			/* max diff value     */ 0.0
 			/* conversion         */ esdl_ident
@@ -175,14 +204,14 @@
 				/* upper limit        */ 3.4028234663852886E+38
 			/end AXIS_DESCR
 			/begin IF_DATA E_TARGET
-			    DP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 4 1000 0 1000 8
+			    DP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 6 1000 0 1000 8
 			/end IF_DATA
 		/end CHARACTERISTIC
 
 		/begin CHARACTERISTIC components.Module.Component_instance.AirFriction
 			/* long identifier    */ ""
 			/* type               */ CURVE
-			/* ecu address        */ 0x435124
+			/* ecu address        */ 0x435264
 			/* record layout      */ STANDARD_CURVE_R32R32
 			/* max diff value     */ 0.0
 			/* conversion         */ esdl_ident
@@ -197,14 +226,14 @@
 				/* upper limit        */ 3.4028234663852886E+38
 			/end AXIS_DESCR
 			/begin IF_DATA E_TARGET
-			    DP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 4 1000 0 1000 9
+			    DP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 6 1000 0 1000 9
 			/end IF_DATA
 		/end CHARACTERISTIC
 
-		/begin CHARACTERISTIC components.Module.Component_instance.Landscape
+		/begin CHARACTERISTIC components.Component.Landscape
 			/* long identifier    */ ""
 			/* type               */ CURVE
-			/* ecu address        */ 0x435250
+			/* ecu address        */ 0x4351A0
 			/* record layout      */ STANDARD_CURVE_R32R32
 			/* max diff value     */ 0.0
 			/* conversion         */ esdl_ident
@@ -219,7 +248,7 @@
 				/* upper limit        */ 3.4028234663852886E+38
 			/end AXIS_DESCR
 			/begin IF_DATA E_TARGET
-			    DP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 4 1000 0 1000 10
+			    DP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 6 1000 0 1001 0
 			/end IF_DATA
 		/end CHARACTERISTIC
 
@@ -231,10 +260,10 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ 0
 			/* upper limit        */ 1
-			ECU_ADDRESS 0x4520A2
+			ECU_ADDRESS 0x4530DB
 			BIT_MASK 0x1
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 2
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 4
 			/end IF_DATA
 		/end MEASUREMENT
 
@@ -246,10 +275,10 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ 0
 			/* upper limit        */ 1
-			ECU_ADDRESS 0x4520A1
+			ECU_ADDRESS 0x4530DA
 			BIT_MASK 0x1
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 3
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 5
 			/end IF_DATA
 		/end MEASUREMENT
 
@@ -261,10 +290,25 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ 0
 			/* upper limit        */ 1
-			ECU_ADDRESS 0x4520A0
+			ECU_ADDRESS 0x4530D8
 			BIT_MASK 0x1
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 4
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 6
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT components.Driver.newState
+			/* long identifier    */ ""
+			/* datatype           */ UBYTE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ 0
+			/* upper limit        */ 1
+			ECU_ADDRESS 0x4530D9
+			BIT_MASK 0x1
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 7
 			/end IF_DATA
 		/end MEASUREMENT
 
@@ -276,7 +320,7 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
-			ECU_ADDRESS 0x4520AC
+			ECU_ADDRESS 0x4530EC
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 2 1001 0
 			/end IF_DATA
@@ -290,9 +334,53 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
-			ECU_ADDRESS 0x452098
+			ECU_ADDRESS 0x4530D0
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 3 1001 0
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT components.accStateChange.newState
+			/* long identifier    */ ""
+			/* datatype           */ UBYTE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ 0
+			/* upper limit        */ 1
+			ECU_ADDRESS 0x4530CC
+			BIT_MASK 0x1
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 4 1001 0
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT components.accMessage.accIsActive
+			/* long identifier    */ ""
+			/* datatype           */ UBYTE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ 0
+			/* upper limit        */ 1
+			ECU_ADDRESS 0x4530C4
+			BIT_MASK 0x1
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 5 1001 0
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT components.accMessage.accTargetSpeed
+			/* long identifier    */ ""
+			/* datatype           */ FLOAT32_IEEE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			ECU_ADDRESS 0x4530C8
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 5 1001 1
 			/end IF_DATA
 		/end MEASUREMENT
 
@@ -304,9 +392,9 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
-			ECU_ADDRESS 0x4520CC
+			ECU_ADDRESS 0x45310C
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 4 1000 1
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 6 1000 3
 			/end IF_DATA
 		/end MEASUREMENT
 
@@ -318,9 +406,9 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
-			ECU_ADDRESS 0x4520C0
+			ECU_ADDRESS 0x453100
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 4 1000 2
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 6 1000 4
 			/end IF_DATA
 		/end MEASUREMENT
 
@@ -332,9 +420,9 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
-			ECU_ADDRESS 0x4520D0
+			ECU_ADDRESS 0x453110
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 4 1000 3
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 6 1000 5
 			/end IF_DATA
 		/end MEASUREMENT
 
@@ -346,9 +434,9 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
-			ECU_ADDRESS 0x4520C8
+			ECU_ADDRESS 0x453108
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 4 1000 4
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 6 1000 6
 			/end IF_DATA
 		/end MEASUREMENT
 
@@ -360,9 +448,9 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
-			ECU_ADDRESS 0x4520C4
+			ECU_ADDRESS 0x453104
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 4 1000 5
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 6 1000 7
 			/end IF_DATA
 		/end MEASUREMENT
 
@@ -374,9 +462,9 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
-			ECU_ADDRESS 0x4520E4
+			ECU_ADDRESS 0x45314C
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 4 1000 0 1000 0
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 6 1000 0 1000 0
 			/end IF_DATA
 		/end MEASUREMENT
 
@@ -388,9 +476,9 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
-			ECU_ADDRESS 0x4520E8
+			ECU_ADDRESS 0x453150
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 4 1000 0 1000 2
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 6 1000 0 1000 2
 			/end IF_DATA
 		/end MEASUREMENT
 
@@ -402,9 +490,9 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
-			ECU_ADDRESS 0x4520D8
+			ECU_ADDRESS 0x453140
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 4 1000 0 1000 3
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 6 1000 0 1000 3
 			/end IF_DATA
 		/end MEASUREMENT
 
@@ -416,9 +504,9 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
-			ECU_ADDRESS 0x4520DC
+			ECU_ADDRESS 0x453144
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 4 1000 0 1000 4
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 6 1000 0 1000 4
 			/end IF_DATA
 		/end MEASUREMENT
 
@@ -430,9 +518,9 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
-			ECU_ADDRESS 0x4520D4
+			ECU_ADDRESS 0x45313C
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 4 1000 0 1000 5
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 6 1000 0 1000 5
 			/end IF_DATA
 		/end MEASUREMENT
 
@@ -444,13 +532,13 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
-			ECU_ADDRESS 0x4520E0
+			ECU_ADDRESS 0x453148
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 4 1000 0 1000 6
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 6 1000 0 1000 6
 			/end IF_DATA
 		/end MEASUREMENT
 
-		/begin MEASUREMENT components.ContinousTrack.totalDistance
+		/begin MEASUREMENT components.Module.ACC_instance.prevGaspedPosition
 			/* long identifier    */ ""
 			/* datatype           */ FLOAT32_IEEE
 			/* conversion         */ esdl_ident
@@ -458,9 +546,151 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
-			ECU_ADDRESS 0x45209C
+			ECU_ADDRESS 0x453120
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 5 1000 0
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 6 1000 1 1000 0
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT components.Module.ACC_instance.prevBrakepedPosition
+			/* long identifier    */ ""
+			/* datatype           */ FLOAT32_IEEE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			ECU_ADDRESS 0x45311C
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 6 1000 1 1000 1
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT components.Module.ACC_instance.accGaspedPosition
+			/* long identifier    */ ""
+			/* datatype           */ FLOAT32_IEEE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			ECU_ADDRESS 0x453118
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 6 1000 1 1000 2
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT components.Module.ACC_instance.accBrakepedPosition
+			/* long identifier    */ ""
+			/* datatype           */ FLOAT32_IEEE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			ECU_ADDRESS 0x453114
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 6 1000 1 1000 3
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT components.Module.ACC_instance.isActive
+			/* long identifier    */ ""
+			/* datatype           */ UBYTE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ 0
+			/* upper limit        */ 1
+			ECU_ADDRESS 0x453124
+			BIT_MASK 0x1
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 6 1000 1 1000 4
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT components.Module.ACC_instance_3.prevGaspedPosition
+			/* long identifier    */ ""
+			/* datatype           */ FLOAT32_IEEE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			ECU_ADDRESS 0x453134
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 6 1000 2 1000 0
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT components.Module.ACC_instance_3.prevBrakepedPosition
+			/* long identifier    */ ""
+			/* datatype           */ FLOAT32_IEEE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			ECU_ADDRESS 0x453130
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 6 1000 2 1000 1
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT components.Module.ACC_instance_3.accGaspedPosition
+			/* long identifier    */ ""
+			/* datatype           */ FLOAT32_IEEE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			ECU_ADDRESS 0x45312C
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 6 1000 2 1000 2
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT components.Module.ACC_instance_3.accBrakepedPosition
+			/* long identifier    */ ""
+			/* datatype           */ FLOAT32_IEEE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			ECU_ADDRESS 0x453128
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 6 1000 2 1000 3
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT components.Module.ACC_instance_3.isActive
+			/* long identifier    */ ""
+			/* datatype           */ UBYTE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ 0
+			/* upper limit        */ 1
+			ECU_ADDRESS 0x453138
+			BIT_MASK 0x1
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 6 1000 2 1000 4
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT components.ContinuousTrack.totalDistance
+			/* long identifier    */ ""
+			/* datatype           */ FLOAT32_IEEE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			ECU_ADDRESS 0x4530D4
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 7 1000 0
 			/end IF_DATA
 		/end MEASUREMENT
 
@@ -478,7 +708,7 @@
 				components.DeltaTimeService
 				components.Driver
 				components.Module
-				components.ContinousTrack
+				components.ContinuousTrack
 			/end SUB_FUNCTION
 		/end FUNCTION
 		
@@ -491,13 +721,19 @@
 			/begin DEF_CHARACTERISTIC
 				components.Driver.inGaspedPosition
 				components.Driver.inBreakpedPosition
+				components.Driver.accIsActive
+				components.Driver.accTargetSpeed
 			/end DEF_CHARACTERISTIC
 			/begin OUT_MEASUREMENT
+				components.accMessage.accIsActive
+				components.accMessage.accTargetSpeed
+				components.accStateChange.newState
 				components.breakpedMessage.breakpedPosition
 				components.gaspedMessage.gaspedPosition
 			/end OUT_MEASUREMENT
 			/begin LOC_MEASUREMENT
 				components.Driver.accState
+				components.Driver.newState
 				components.Driver.turnAccOff
 				components.Driver.turnAccOn
 			/end LOC_MEASUREMENT
@@ -506,9 +742,14 @@
 		/begin FUNCTION components.Module
 			""
 			/begin IN_MEASUREMENT
+				components.accMessage.accIsActive
+				components.accMessage.accTargetSpeed
 				components.breakpedMessage.breakpedPosition
 				components.gaspedMessage.gaspedPosition
 			/end IN_MEASUREMENT
+			/begin OUT_MEASUREMENT
+				components.accMessage.accIsActive
+			/end OUT_MEASUREMENT
 			/begin LOC_MEASUREMENT
 				components.Module.dh
 				components.Module.dtime
@@ -518,6 +759,8 @@
 			/end LOC_MEASUREMENT
 			/begin SUB_FUNCTION
 				components.Module.Component_instance
+				components.Module.ACC_instance
+				components.Module.ACC_instance_3
 			/end SUB_FUNCTION
 		/end FUNCTION
 		
@@ -528,7 +771,7 @@
 				components.Module.Component_instance.EngineMomentum
 				components.Module.Component_instance.BrakeMomentum
 				components.Module.Component_instance.AirFriction
-				components.Module.Component_instance.Landscape
+				components.Component.Landscape
 			/end DEF_CHARACTERISTIC
 			/begin LOC_MEASUREMENT
 				components.Module.Component_instance.dh
@@ -540,15 +783,41 @@
 			/end LOC_MEASUREMENT
 		/end FUNCTION
 		
-		/begin FUNCTION components.ContinousTrack
+		/begin FUNCTION components.Module.ACC_instance
 			""
 			/begin LOC_MEASUREMENT
-				components.ContinousTrack.totalDistance
+				components.Module.ACC_instance.accBrakepedPosition
+				components.Module.ACC_instance.accGaspedPosition
+				components.Module.ACC_instance.isActive
+				components.Module.ACC_instance.prevBrakepedPosition
+				components.Module.ACC_instance.prevGaspedPosition
+			/end LOC_MEASUREMENT
+		/end FUNCTION
+		
+		/begin FUNCTION components.Module.ACC_instance_3
+			""
+			/begin LOC_MEASUREMENT
+				components.Module.ACC_instance_3.accBrakepedPosition
+				components.Module.ACC_instance_3.accGaspedPosition
+				components.Module.ACC_instance_3.isActive
+				components.Module.ACC_instance_3.prevBrakepedPosition
+				components.Module.ACC_instance_3.prevGaspedPosition
+			/end LOC_MEASUREMENT
+		/end FUNCTION
+		
+		/begin FUNCTION components.ContinuousTrack
+			""
+			/begin LOC_MEASUREMENT
+				components.ContinuousTrack.totalDistance
 			/end LOC_MEASUREMENT
 		/end FUNCTION
 		
 		/begin RECORD_LAYOUT STANDARD_VALUE_R32
 			/* value              */ FNC_VALUES 1 FLOAT32_IEEE COLUMN_DIR DIRECT
+		/end RECORD_LAYOUT
+		
+		/begin RECORD_LAYOUT STANDARD_VALUE_U8
+			/* value              */ FNC_VALUES 1 UBYTE COLUMN_DIR DIRECT
 		/end RECORD_LAYOUT
 		
 		/begin RECORD_LAYOUT STANDARD_MAP_R32R32R32
@@ -573,8 +842,10 @@
 				components.Driver
 				components.gaspedMessage
 				components.breakpedMessage
+				components.accStateChange
+				components.accMessage
 				components.Module
-				components.ContinousTrack
+				components.ContinuousTrack
 			/end SUB_GROUP
 		/end GROUP
 		
@@ -587,9 +858,12 @@
 			/begin REF_CHARACTERISTIC
 				components.Driver.inGaspedPosition
 				components.Driver.inBreakpedPosition
+				components.Driver.accIsActive
+				components.Driver.accTargetSpeed
 			/end REF_CHARACTERISTIC
 			/begin REF_MEASUREMENT
 				components.Driver.accState
+				components.Driver.newState
 				components.Driver.turnAccOff
 				components.Driver.turnAccOn
 			/end REF_MEASUREMENT
@@ -609,6 +883,21 @@
 			/end REF_MEASUREMENT
 		/end GROUP
 		
+		/begin GROUP components.accStateChange
+			""
+			/begin REF_MEASUREMENT
+				components.accStateChange.newState
+			/end REF_MEASUREMENT
+		/end GROUP
+		
+		/begin GROUP components.accMessage
+			""
+			/begin REF_MEASUREMENT
+				components.accMessage.accIsActive
+				components.accMessage.accTargetSpeed
+			/end REF_MEASUREMENT
+		/end GROUP
+		
 		/begin GROUP components.Module
 			""
 			/begin REF_MEASUREMENT
@@ -620,6 +909,8 @@
 			/end REF_MEASUREMENT
 			/begin SUB_GROUP
 				components.Module.Component_instance
+				components.Module.ACC_instance
+				components.Module.ACC_instance_3
 			/end SUB_GROUP
 		/end GROUP
 		
@@ -630,7 +921,7 @@
 				components.Module.Component_instance.EngineMomentum
 				components.Module.Component_instance.BrakeMomentum
 				components.Module.Component_instance.AirFriction
-				components.Module.Component_instance.Landscape
+				components.Component.Landscape
 			/end REF_CHARACTERISTIC
 			/begin REF_MEASUREMENT
 				components.Module.Component_instance.dh
@@ -642,10 +933,32 @@
 			/end REF_MEASUREMENT
 		/end GROUP
 		
-		/begin GROUP components.ContinousTrack
+		/begin GROUP components.Module.ACC_instance
 			""
 			/begin REF_MEASUREMENT
-				components.ContinousTrack.totalDistance
+				components.Module.ACC_instance.accBrakepedPosition
+				components.Module.ACC_instance.accGaspedPosition
+				components.Module.ACC_instance.isActive
+				components.Module.ACC_instance.prevBrakepedPosition
+				components.Module.ACC_instance.prevGaspedPosition
+			/end REF_MEASUREMENT
+		/end GROUP
+		
+		/begin GROUP components.Module.ACC_instance_3
+			""
+			/begin REF_MEASUREMENT
+				components.Module.ACC_instance_3.accBrakepedPosition
+				components.Module.ACC_instance_3.accGaspedPosition
+				components.Module.ACC_instance_3.isActive
+				components.Module.ACC_instance_3.prevBrakepedPosition
+				components.Module.ACC_instance_3.prevGaspedPosition
+			/end REF_MEASUREMENT
+		/end GROUP
+		
+		/begin GROUP components.ContinuousTrack
+			""
+			/begin REF_MEASUREMENT
+				components.ContinuousTrack.totalDistance
 			/end REF_MEASUREMENT
 		/end GROUP
 		

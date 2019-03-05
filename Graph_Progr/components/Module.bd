@@ -2,33 +2,29 @@ classType components.Module
 blockdiagramSpecification Main {
 	methodBody calc {
 		outPin active {
-			connection_25, connection_9, connection_15, connection_17, connection_19
+			connection_9, connection_15, connection_17, connection_19, connection_38, connection_50, connection_52
 		}
 	}
-	simpleIdentifier trackPosition at (541, 55) {
+	simpleIdentifier trackPosition at (841, 55) {
 		label at (0, -1)
 		inPin connection_10
 		outPin sequenceCall {
 			inPin connection_9
 		}
 	}
-	complexIdentifier Component_instance at (151, 51) size (14, 8) {
+	complexIdentifier Component_instance at (471, 51) size (14, 8) {
 		label at (0, 1)
 		methodCall components.Component.calc {
-			argumentPin brake at (left, 0) connection_11
-			argumentPin power at (left, 1) connection_12 {
-				bendpoints (80, 0), (80, -20)
-			}
-			argumentPin dtime at (left, 2) connection_26 {
-				bendpoints (80, 0)
-			}
+			argumentPin brake at (left, 0) connection_37
+			argumentPin power at (left, 1) connection_39
+			argumentPin dtime at (left, 2) connection_26
 			sequenceCall at (-50, -30) {
-				inPin connection_25
+				inPin connection_38
 			}
 		}
 		methodCall components.Component.get_v {
 			returnPin at (right, 6) {
-				connection_18
+				connection_40, connection_18
 			}
 			sequenceCall {
 				inPin
@@ -67,7 +63,7 @@ blockdiagramSpecification Main {
 			}
 		}
 	}
-	complexIdentifier components.ContinuousTrack at (361, 51) size (14, 8) {
+	complexIdentifier components.ContinuousTrack at (661, 51) size (14, 8) {
 		label at (0, 1)
 		methodCall components.ContinuousTrack.getTrackPosition {
 			argumentPin position at (left, 0) connection_6
@@ -89,43 +85,43 @@ blockdiagramSpecification Main {
 			}
 		}
 	}
-	simpleIdentifier components.breakpedMessage.breakpedPosition at (11, 55) {
+	simpleIdentifier components.breakpedMessage.breakpedPosition at (21, 35) {
 		label at (0, -1)
 		outPin {
-			connection_11
+			connection_43
 		}
 		sequenceCall {
 			inPin
 		}
 	}
-	simpleIdentifier components.gaspedMessage.gaspedPosition at (11, 85) {
+	simpleIdentifier components.gaspedMessage.gaspedPosition at (21, 65) {
 		label at (0, -1)
 		outPin {
-			connection_12
+			connection_42
 		}
 		sequenceCall {
 			inPin
 		}
 	}
-	simpleIdentifier dh at (541, 155) {
+	simpleIdentifier dh at (841, 155) {
 		label at (0, -1)
 		inPin connection_16 {
-			bendpoints (50, 0), (50, 50)
+			bendpoints (30, 0), (30, 50)
 		}
 		outPin sequenceCall {
 			inPin connection_15
 		}
 	}
-	simpleIdentifier v at (541, 205) {
+	simpleIdentifier v at (841, 205) {
 		label at (0, -1)
 		inPin connection_18 {
-			bendpoints (40, 0), (40, 90)
+			bendpoints (20, 0), (20, 90)
 		}
 		outPin sequenceCall {
 			inPin connection_17
 		}
 	}
-	simpleIdentifier totalDistance at (541, 105) {
+	simpleIdentifier totalDistance at (841, 105) {
 		label at (0, -1)
 		inPin connection_20 {
 			bendpoints (10, 0), (10, 40)
@@ -134,13 +130,79 @@ blockdiagramSpecification Main {
 			inPin connection_19
 		}
 	}
-	simpleIdentifier components.DeltaTimeService.deltaT at (11, 145) {
+	simpleIdentifier components.DeltaTimeService.deltaT at (381, 75) {
 		label at (0, -1)
 		inPin outPin {
 			connection_26
 		}
 		sequenceCall {
 			inPin
+		}
+	}
+	simpleIdentifier components.accMessage.accTargetSpeed at (21, 105) {
+		label at (0, -1)
+		outPin {
+			connection_41
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	complexIdentifier ACC_instance_3 at (161, 51) size (20, 10) {
+		label at (0, 1)
+		methodCall components.ACC.calc {
+			argumentPin isActive at (left, 7) connection_51 {
+				bendpoints (80, 0), (80, -20)
+			}
+			argumentPin brakepedPosition at (left, 0) connection_43 {
+				bendpoints (80, 0), (80, 20)
+			}
+			argumentPin gaspedPosition at (left, 1) connection_42
+			argumentPin v at (left, 8) connection_40 {
+				bendpoints (20, 0), (20, 90), (-470, 90)
+			}
+			argumentPin targetSpeed at (left, 6) connection_41 {
+				bendpoints (80, 0), (80, 10)
+			}
+			sequenceCall at (-30, -44) {
+				inPin connection_50
+			}
+		}
+		methodCall components.ACC.getGaspedPosition {
+			returnPin at (right, 1) {
+				connection_39
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		methodCall components.ACC.getBrakepedPosition {
+			returnPin at (right, 0) {
+				connection_37
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		methodCall components.ACC.getIsActive {
+			returnPin at (right, 8) {
+				connection_53
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	simpleIdentifier components.accMessage.accIsActive at (11, 145) {
+		label at (10, -1)
+		inPin connection_53 {
+			bendpoints (0, 110), (-360, 110)
+		}
+		outPin {
+			connection_51
+		}
+		sequenceCall at (30, -14) {
+			inPin connection_52
 		}
 	}
 }

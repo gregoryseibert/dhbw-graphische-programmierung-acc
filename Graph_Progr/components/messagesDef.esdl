@@ -35,5 +35,16 @@ data interface mes_crashDetect {
 
 data interface accStateChange{
 	boolean newState=false;
+<<<<<<< HEAD
 
+=======
+}
+
+data interface accMessage {
+	
+	boolean accIsActive = false;
+	
+	real accTargetSpeed = 0.0;
+	
+>>>>>>> feature-acc
 }
