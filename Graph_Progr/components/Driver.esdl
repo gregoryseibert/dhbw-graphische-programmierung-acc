@@ -30,7 +30,7 @@ writes gaspedMessage.gaspedPosition , breakpedMessage.breakpedPosition, accState
 			
 		}
 		
-		if (turnAccOn == true && turnAccOff) {
+		if (turnAccOn && turnAccOff) {
 			
 			accState = false;
 			
