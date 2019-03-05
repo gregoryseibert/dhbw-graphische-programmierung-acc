@@ -1,0 +1,11 @@
+Component     components.Timer size ( 14 , 8 ) {
+	labelPosition ( 0 , 1 )
+	methodLayout turn {
+		pin newState ( Left , 1 )
+		pin difTime ( Left , 2 )
+	}
+	memberLayout on {
+		setPinPosition ( Left , 0 )
+		getPinPosition ( Right , 0 )
+	}
+}

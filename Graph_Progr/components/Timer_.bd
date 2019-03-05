@@ -1,0 +1,40 @@
+classType components.Timer_
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin active {
+			connection_14
+		}
+	}
+	simpleIdentifier components.accStateChange.newState at (241, 175) {
+		label at (0, -1)
+		outPin {
+			connection_13
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier components.DeltaTimeService.deltaT at (171, 225) {
+		label at (0, -1)
+		inPin outPin {
+			connection_15
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	complexIdentifier components.Timer at (361, 151) size (14, 8) {
+		label at (0, 1)
+		methodCall components.Timer.turn {
+			argumentPin newState at (left, 1) connection_13 {
+				bendpoints (30, 0), (30, -10)
+			}
+			argumentPin difTime at (left, 2) connection_15 {
+				bendpoints (0, -10), (130, -10)
+			}
+			sequenceCall at (-50, -30) {
+				inPin connection_14
+			}
+		}
+	}
+}

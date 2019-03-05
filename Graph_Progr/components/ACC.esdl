@@ -65,5 +65,6 @@ class ACC {
 	
 	public boolean getIsActive() {
 		return isActive;
+
 	}
 }
