@@ -1,0 +1,55 @@
+classType components.DriverBlock
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin active {
+			connection_2, connection_4
+		}
+	}
+	simpleIdentifier MyBrakeppedalTable_table at (291, 131) {
+		label at (0, 1)
+		inPin connection_6 {
+			bendpoints (0, -50)
+		}
+		outPin {
+			connection_5
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier MyGasppedalTable_table at (301, 231) {
+		label at (0, 1)
+		inPin connection_7 {
+			bendpoints (0, 50)
+		}
+		outPin {
+			connection_3
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier components.gaspedMessage.gaspedPosition at (641, 245) {
+		label at (0, -1)
+		inPin connection_3
+		sequenceCall {
+			inPin connection_2
+		}
+	}
+	simpleIdentifier components.breakpedMessage.breakpedPosition at (641, 145) {
+		label at (0, -1)
+		inPin connection_5
+		sequenceCall {
+			inPin connection_4
+		}
+	}
+	simpleIdentifier v at (161, 195) {
+		label at (0, -1)
+		inPin outPin {
+			connection_7, connection_6
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+}
