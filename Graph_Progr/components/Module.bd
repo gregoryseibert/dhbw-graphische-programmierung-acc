@@ -1,29 +1,146 @@
 classType components.Module
 blockdiagramSpecification Main {
 	methodBody calc {
-		outPin active
+		outPin active {
+			connection_25, connection_9, connection_15, connection_17, connection_19
+		}
 	}
-	complexIdentifier Component_instance at (421, 151) size (14, 8) {
+	simpleIdentifier trackPosition at (541, 55) {
+		label at (0, -1)
+		inPin connection_10
+		outPin sequenceCall {
+			inPin connection_9
+		}
+	}
+	complexIdentifier Component_instance at (151, 51) size (14, 8) {
 		label at (0, 1)
 		methodCall components.Component.calc {
-			argumentPin brake at (left, 0) argumentPin power at (left, 1) argumentPin dtime at (left, 2) sequenceCall {
-				inPin
+			argumentPin brake at (left, 0) connection_11
+			argumentPin power at (left, 1) connection_12 {
+				bendpoints (80, 0), (80, -20)
+			}
+			argumentPin dtime at (left, 2) connection_26 {
+				bendpoints (80, 0)
+			}
+			sequenceCall at (-50, -30) {
+				inPin connection_25
 			}
 		}
 		methodCall components.Component.get_v {
-			returnPin at (right, 0) sequenceCall {
+			returnPin at (right, 6) {
+				connection_18
+			}
+			sequenceCall {
 				inPin
 			}
 		}
 		methodCall components.Component.get_ds {
-			returnPin at (right, 1) sequenceCall {
+			returnPin at (right, 1) {
+				connection_7
+			}
+			sequenceCall {
 				inPin
 			}
 		}
 		methodCall components.Component.get_dh {
-			returnPin at (right, 2) sequenceCall {
+			returnPin at (right, 5) {
+				connection_16
+			}
+			sequenceCall {
 				inPin
 			}
+		}
+		methodCall components.Component.getPosition {
+			returnPin at (right, 0) {
+				connection_6
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		methodCall components.Component.getTracksize {
+			returnPin at (right, 2) {
+				connection_8
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	complexIdentifier components.ContinuousTrack at (361, 51) size (14, 8) {
+		label at (0, 1)
+		methodCall components.ContinuousTrack.getTrackPosition {
+			argumentPin position at (left, 0) connection_6
+			argumentPin ds at (left, 1) connection_7
+			argumentPin trackSize at (left, 2) connection_8
+			returnPin at (right, 0) {
+				connection_10
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		methodCall components.ContinuousTrack.getTotalDistance {
+			returnPin at (right, 1) {
+				connection_20
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	simpleIdentifier components.breakpedMessage.breakpedPosition at (11, 55) {
+		label at (0, -1)
+		outPin {
+			connection_11
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier components.gaspedMessage.gaspedPosition at (11, 85) {
+		label at (0, -1)
+		outPin {
+			connection_12
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier dh at (541, 155) {
+		label at (0, -1)
+		inPin connection_16 {
+			bendpoints (50, 0), (50, 50)
+		}
+		outPin sequenceCall {
+			inPin connection_15
+		}
+	}
+	simpleIdentifier v at (541, 205) {
+		label at (0, -1)
+		inPin connection_18 {
+			bendpoints (40, 0), (40, 90)
+		}
+		outPin sequenceCall {
+			inPin connection_17
+		}
+	}
+	simpleIdentifier totalDistance at (541, 105) {
+		label at (0, -1)
+		inPin connection_20 {
+			bendpoints (10, 0), (10, 40)
+		}
+		outPin sequenceCall {
+			inPin connection_19
+		}
+	}
+	simpleIdentifier components.DeltaTimeService.deltaT at (11, 145) {
+		label at (0, -1)
+		inPin outPin {
+			connection_26
+		}
+		sequenceCall {
+			inPin
 		}
 	}
 }

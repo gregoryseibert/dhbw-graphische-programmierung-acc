@@ -32,4 +32,8 @@ data interface mes_accState {
 data interface mes_crashDetect {
 	
 	boolean crash = false;
+
+data interface accStateChange{
+	boolean newState=false;
+
 }

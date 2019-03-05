@@ -3,7 +3,6 @@
 	<name>Graph_Progr</name>
 	<comment></comment>
 	<projects>
-		<project>AssertionLibrary</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

@@ -2,7 +2,7 @@ package tests;
 
 import assertLib.Assert;
 
-import components.ContinousTrack;
+import components.ContinuousTrack;
 
 static class ComponentTests {
 	characteristic real TrackSize = 1000.0;
@@ -18,7 +18,7 @@ static class ComponentTests {
 		s = 500.0;
 		ds = 10.0;
 		
-		newPosition = ContinousTrack.getTrackPosition(s, ds, TrackSize);
+		newPosition = ContinuousTrack.getTrackPosition(s, ds, TrackSize);
 
 		Assert.assertTrue(newPosition == s + ds);
 	}
@@ -31,7 +31,7 @@ static class ComponentTests {
 		s = 500.0;
 		ds = -10.0;
 		
-		newPosition = ContinousTrack.getTrackPosition(s, ds, TrackSize);
+		newPosition = ContinuousTrack.getTrackPosition(s, ds, TrackSize);
 
 		Assert.assertTrue(newPosition == s + ds);
 	}
@@ -44,7 +44,7 @@ static class ComponentTests {
 		s = 990.0;
 		ds = 15.0;
 		
-		newPosition = ContinousTrack.getTrackPosition(s, ds, TrackSize);
+		newPosition = ContinuousTrack.getTrackPosition(s, ds, TrackSize);
 
 		Assert.assertTrue(newPosition == s + ds - TrackSize);
 	}
@@ -57,7 +57,7 @@ static class ComponentTests {
 		s = 5.0;
 		ds = -15.0;
 		
-		newPosition = ContinousTrack.getTrackPosition(s, ds, TrackSize);
+		newPosition = ContinuousTrack.getTrackPosition(s, ds, TrackSize);
 
 		Assert.assertTrue(newPosition == TrackSize - s + ds);
 	}

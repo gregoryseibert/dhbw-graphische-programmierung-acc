@@ -1,33 +1,35 @@
 package tests;
 
+import assertLib.Assert;
+
+import components.ContinuousTrack;
 import components.Component;
 
-static class ComponentTest {
-	Component tester;
-	characteristic real calc_brake = 0.0;
-	characteristic real calc_power = 0.0;
-	characteristic real calc_dtime = 0.0;
-	real get_v_return;
-	real get_ds_return;
-	real get_dh_return;
 
-	@thread
-	public void calc() {
-		tester.calc(calc_brake, calc_power, calc_dtime);
-	}
+type Table is table real -> real;
 
-	@thread
-	public void get_v() {
-		get_v_return = tester.get_v();
-	}
-
-	@thread
-	public void get_ds() {
-		get_ds_return = tester.get_ds();
-	}
-
-	@thread
-	public void get_dh() {
-		get_dh_return = tester.get_dh();
+static class SlopeTests {
+	characteristic real TrackSize = 1000.0;
+	//real newPosition;
+	real s = 0.0;
+	real ds = 0.0;
+	real dh = 0.0;
+	Component Comp;
+	real totaldist = 0.0 ;
+	/*
+	 * check slope is under 20%
+	 */
+	@Test
+	public void testSlopeLimit() {
+		
+		while(totaldist < (2.0*TrackSize)) {
+			Comp.calc(0.0, 100.0, 0.01);		
+			dh = Comp.get_dh();
+			ds = Comp.get_ds();
+			s= ContinuousTrack.getTrackPosition(s,ds,TrackSize);
+			totaldist = ContinuousTrack.getTotalDistance();
+			Assert.assertTrue(dh/ds <= 0.2);
+			Assert.assertTrue(dh/ds >= -0.2);		
+		}
 	}
 }

@@ -56,7 +56,7 @@
 		        QP_BLOB 1
 		    /end SOURCE
 		    /begin TP_BLOB
-		         /* programm id */ 671105470
+		         /* programm id */ 1300250082
 		         /* target id   */ 7
 		         /*             */ 0 2 0
 		    /end TP_BLOB
@@ -85,10 +85,24 @@
 		    ALIGNMENT_FLOAT64_IEEE 8 
 		/end MOD_COMMON
 
-		/begin CHARACTERISTIC components.Component.TrackSize
+		/begin CHARACTERISTIC components.Driver.inGaspedPosition
 			/* long identifier    */ ""
 			/* type               */ VALUE
-			/* ecu address        */ 0x4340A0
+			/* ecu address        */ 0x4520A8
+			/* record layout      */ STANDARD_VALUE_R32
+			/* max diff value     */ 0.0
+			/* conversion         */ esdl_ident
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			/begin IF_DATA E_TARGET
+			    DP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 0
+			/end IF_DATA
+		/end CHARACTERISTIC
+
+		/begin CHARACTERISTIC components.Driver.inBreakpedPosition
+			/* long identifier    */ ""
+			/* type               */ VALUE
+			/* ecu address        */ 0x4520A4
 			/* record layout      */ STANDARD_VALUE_R32
 			/* max diff value     */ 0.0
 			/* conversion         */ esdl_ident
@@ -99,38 +113,24 @@
 			/end IF_DATA
 		/end CHARACTERISTIC
 
-		/begin CHARACTERISTIC components.Component.c
+		/begin CHARACTERISTIC components.Module.Component_instance.TrackSize
 			/* long identifier    */ ""
 			/* type               */ VALUE
-			/* ecu address        */ 0x4340A4
+			/* ecu address        */ 0x435120
 			/* record layout      */ STANDARD_VALUE_R32
 			/* max diff value     */ 0.0
 			/* conversion         */ esdl_ident
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
 			/begin IF_DATA E_TARGET
-			    DP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 7
+			    DP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 4 1000 0 1000 1
 			/end IF_DATA
 		/end CHARACTERISTIC
 
-		/begin CHARACTERISTIC components.Component.c_2
-			/* long identifier    */ ""
-			/* type               */ VALUE
-			/* ecu address        */ 0x4340A8
-			/* record layout      */ STANDARD_VALUE_R32
-			/* max diff value     */ 0.0
-			/* conversion         */ esdl_ident
-			/* lower limit        */ -3.4028234663852886E+38
-			/* upper limit        */ 3.4028234663852886E+38
-			/begin IF_DATA E_TARGET
-			    DP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 8
-			/end IF_DATA
-		/end CHARACTERISTIC
-
-		/begin CHARACTERISTIC components.Component.EngineMomentum
+		/begin CHARACTERISTIC components.Module.Component_instance.EngineMomentum
 			/* long identifier    */ ""
 			/* type               */ MAP
-			/* ecu address        */ 0x434114
+			/* ecu address        */ 0x43518C
 			/* record layout      */ STANDARD_MAP_R32R32R32
 			/* max diff value     */ 0.0
 			/* conversion         */ esdl_ident
@@ -153,14 +153,14 @@
 				/* upper limit        */ 3.4028234663852886E+38
 			/end AXIS_DESCR
 			/begin IF_DATA E_TARGET
-			    DP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 11
+			    DP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 4 1000 0 1000 7
 			/end IF_DATA
 		/end CHARACTERISTIC
 
-		/begin CHARACTERISTIC components.Component.BrakeMomentum
+		/begin CHARACTERISTIC components.Module.Component_instance.BrakeMomentum
 			/* long identifier    */ ""
 			/* type               */ CURVE
-			/* ecu address        */ 0x4340E0
+			/* ecu address        */ 0x435158
 			/* record layout      */ STANDARD_CURVE_R32R32
 			/* max diff value     */ 0.0
 			/* conversion         */ esdl_ident
@@ -175,14 +175,14 @@
 				/* upper limit        */ 3.4028234663852886E+38
 			/end AXIS_DESCR
 			/begin IF_DATA E_TARGET
-			    DP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 12
+			    DP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 4 1000 0 1000 8
 			/end IF_DATA
 		/end CHARACTERISTIC
 
-		/begin CHARACTERISTIC components.Component.AirFriction
+		/begin CHARACTERISTIC components.Module.Component_instance.AirFriction
 			/* long identifier    */ ""
 			/* type               */ CURVE
-			/* ecu address        */ 0x4340AC
+			/* ecu address        */ 0x435124
 			/* record layout      */ STANDARD_CURVE_R32R32
 			/* max diff value     */ 0.0
 			/* conversion         */ esdl_ident
@@ -197,14 +197,14 @@
 				/* upper limit        */ 3.4028234663852886E+38
 			/end AXIS_DESCR
 			/begin IF_DATA E_TARGET
-			    DP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 13
+			    DP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 4 1000 0 1000 9
 			/end IF_DATA
 		/end CHARACTERISTIC
 
-		/begin CHARACTERISTIC components.Component.Landscape
+		/begin CHARACTERISTIC components.Module.Component_instance.Landscape
 			/* long identifier    */ ""
 			/* type               */ CURVE
-			/* ecu address        */ 0x4341D8
+			/* ecu address        */ 0x435250
 			/* record layout      */ STANDARD_CURVE_R32R32
 			/* max diff value     */ 0.0
 			/* conversion         */ esdl_ident
@@ -219,147 +219,52 @@
 				/* upper limit        */ 3.4028234663852886E+38
 			/end AXIS_DESCR
 			/begin IF_DATA E_TARGET
-			    DP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 14
+			    DP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 4 1000 0 1000 10
 			/end IF_DATA
 		/end CHARACTERISTIC
 
-		/begin MEASUREMENT components.Component.s
+		/begin MEASUREMENT components.Driver.turnAccOn
 			/* long identifier    */ ""
-			/* datatype           */ FLOAT32_IEEE
+			/* datatype           */ UBYTE
 			/* conversion         */ esdl_ident
 			/* resolution         */ 1
 			/* accuracy           */ 100.0
-			/* lower limit        */ -3.4028234663852886E+38
-			/* upper limit        */ 3.4028234663852886E+38
-			ECU_ADDRESS 0x451078
-			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 0
-			/end IF_DATA
-		/end MEASUREMENT
-
-		/begin MEASUREMENT components.Component.v
-			/* long identifier    */ ""
-			/* datatype           */ FLOAT32_IEEE
-			/* conversion         */ esdl_ident
-			/* resolution         */ 1
-			/* accuracy           */ 100.0
-			/* lower limit        */ -3.4028234663852886E+38
-			/* upper limit        */ 3.4028234663852886E+38
-			ECU_ADDRESS 0x45107C
+			/* lower limit        */ 0
+			/* upper limit        */ 1
+			ECU_ADDRESS 0x4520A2
+			BIT_MASK 0x1
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 2
 			/end IF_DATA
 		/end MEASUREMENT
 
-		/begin MEASUREMENT components.Component.ds
+		/begin MEASUREMENT components.Driver.turnAccOff
 			/* long identifier    */ ""
-			/* datatype           */ FLOAT32_IEEE
+			/* datatype           */ UBYTE
 			/* conversion         */ esdl_ident
 			/* resolution         */ 1
 			/* accuracy           */ 100.0
-			/* lower limit        */ -3.4028234663852886E+38
-			/* upper limit        */ 3.4028234663852886E+38
-			ECU_ADDRESS 0x451068
+			/* lower limit        */ 0
+			/* upper limit        */ 1
+			ECU_ADDRESS 0x4520A1
+			BIT_MASK 0x1
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 3
 			/end IF_DATA
 		/end MEASUREMENT
 
-		/begin MEASUREMENT components.Component.h
+		/begin MEASUREMENT components.Driver.accState
 			/* long identifier    */ ""
-			/* datatype           */ FLOAT32_IEEE
+			/* datatype           */ UBYTE
 			/* conversion         */ esdl_ident
 			/* resolution         */ 1
 			/* accuracy           */ 100.0
-			/* lower limit        */ -3.4028234663852886E+38
-			/* upper limit        */ 3.4028234663852886E+38
-			ECU_ADDRESS 0x451070
+			/* lower limit        */ 0
+			/* upper limit        */ 1
+			ECU_ADDRESS 0x4520A0
+			BIT_MASK 0x1
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 4
-			/end IF_DATA
-		/end MEASUREMENT
-
-		/begin MEASUREMENT components.Component.dh
-			/* long identifier    */ ""
-			/* datatype           */ FLOAT32_IEEE
-			/* conversion         */ esdl_ident
-			/* resolution         */ 1
-			/* accuracy           */ 100.0
-			/* lower limit        */ -3.4028234663852886E+38
-			/* upper limit        */ 3.4028234663852886E+38
-			ECU_ADDRESS 0x451064
-			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 5
-			/end IF_DATA
-		/end MEASUREMENT
-
-		/begin MEASUREMENT components.Component.v_2
-			/* long identifier    */ ""
-			/* datatype           */ FLOAT32_IEEE
-			/* conversion         */ esdl_ident
-			/* resolution         */ 1
-			/* accuracy           */ 100.0
-			/* lower limit        */ -3.4028234663852886E+38
-			/* upper limit        */ 3.4028234663852886E+38
-			ECU_ADDRESS 0x451080
-			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 6
-			/end IF_DATA
-		/end MEASUREMENT
-
-		/begin MEASUREMENT components.Component.dt_Renamed
-			/* long identifier    */ ""
-			/* datatype           */ FLOAT32_IEEE
-			/* conversion         */ esdl_ident
-			/* resolution         */ 1
-			/* accuracy           */ 100.0
-			/* lower limit        */ -3.4028234663852886E+38
-			/* upper limit        */ 3.4028234663852886E+38
-			ECU_ADDRESS 0x45106C
-			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 9
-			/end IF_DATA
-		/end MEASUREMENT
-
-		/begin MEASUREMENT components.Component.momentum
-			/* long identifier    */ ""
-			/* datatype           */ FLOAT32_IEEE
-			/* conversion         */ esdl_ident
-			/* resolution         */ 1
-			/* accuracy           */ 100.0
-			/* lower limit        */ -3.4028234663852886E+38
-			/* upper limit        */ 3.4028234663852886E+38
-			ECU_ADDRESS 0x451074
-			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 10
-			/end IF_DATA
-		/end MEASUREMENT
-
-		/begin MEASUREMENT components.Component.v_3
-			/* long identifier    */ ""
-			/* datatype           */ FLOAT32_IEEE
-			/* conversion         */ esdl_ident
-			/* resolution         */ 1
-			/* accuracy           */ 100.0
-			/* lower limit        */ -3.4028234663852886E+38
-			/* upper limit        */ 3.4028234663852886E+38
-			ECU_ADDRESS 0x451084
-			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 15
-			/end IF_DATA
-		/end MEASUREMENT
-
-		/begin MEASUREMENT components.Component.breakposTest
-			/* long identifier    */ ""
-			/* datatype           */ FLOAT32_IEEE
-			/* conversion         */ esdl_ident
-			/* resolution         */ 1
-			/* accuracy           */ 100.0
-			/* lower limit        */ -3.4028234663852886E+38
-			/* upper limit        */ 3.4028234663852886E+38
-			ECU_ADDRESS 0x451060
-			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 1 1000 16
 			/end IF_DATA
 		/end MEASUREMENT
 
@@ -371,9 +276,191 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
-			ECU_ADDRESS 0x4510A0
+			ECU_ADDRESS 0x4520AC
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 2 1001 0
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT components.breakpedMessage.breakpedPosition
+			/* long identifier    */ ""
+			/* datatype           */ FLOAT32_IEEE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			ECU_ADDRESS 0x452098
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 3 1001 0
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT components.Module.trackPosition
+			/* long identifier    */ ""
+			/* datatype           */ FLOAT32_IEEE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			ECU_ADDRESS 0x4520CC
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 4 1000 1
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT components.Module.dh
+			/* long identifier    */ ""
+			/* datatype           */ FLOAT32_IEEE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			ECU_ADDRESS 0x4520C0
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 4 1000 2
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT components.Module.v
+			/* long identifier    */ ""
+			/* datatype           */ FLOAT32_IEEE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			ECU_ADDRESS 0x4520D0
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 4 1000 3
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT components.Module.totalDistance
+			/* long identifier    */ ""
+			/* datatype           */ FLOAT32_IEEE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			ECU_ADDRESS 0x4520C8
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 4 1000 4
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT components.Module.dtime
+			/* long identifier    */ ""
+			/* datatype           */ FLOAT32_IEEE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			ECU_ADDRESS 0x4520C4
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 4 1000 5
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT components.Module.Component_instance.s
+			/* long identifier    */ ""
+			/* datatype           */ FLOAT32_IEEE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			ECU_ADDRESS 0x4520E4
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 4 1000 0 1000 0
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT components.Module.Component_instance.v
+			/* long identifier    */ ""
+			/* datatype           */ FLOAT32_IEEE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			ECU_ADDRESS 0x4520E8
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 4 1000 0 1000 2
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT components.Module.Component_instance.ds
+			/* long identifier    */ ""
+			/* datatype           */ FLOAT32_IEEE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			ECU_ADDRESS 0x4520D8
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 4 1000 0 1000 3
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT components.Module.Component_instance.h
+			/* long identifier    */ ""
+			/* datatype           */ FLOAT32_IEEE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			ECU_ADDRESS 0x4520DC
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 4 1000 0 1000 4
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT components.Module.Component_instance.dh
+			/* long identifier    */ ""
+			/* datatype           */ FLOAT32_IEEE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			ECU_ADDRESS 0x4520D4
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 4 1000 0 1000 5
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT components.Module.Component_instance.momentum
+			/* long identifier    */ ""
+			/* datatype           */ FLOAT32_IEEE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			ECU_ADDRESS 0x4520E0
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 4 1000 0 1000 6
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT components.ContinousTrack.totalDistance
+			/* long identifier    */ ""
+			/* datatype           */ FLOAT32_IEEE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			ECU_ADDRESS 0x45209C
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 5 1000 0
 			/end IF_DATA
 		/end MEASUREMENT
 
@@ -389,8 +476,9 @@
 			""
 			/begin SUB_FUNCTION
 				components.DeltaTimeService
-				components.Component
 				components.Driver
+				components.Module
+				components.ContinousTrack
 			/end SUB_FUNCTION
 		/end FUNCTION
 		
@@ -398,39 +486,65 @@
 			""
 		/end FUNCTION
 		
-		/begin FUNCTION components.Component
+		/begin FUNCTION components.Driver
 			""
 			/begin DEF_CHARACTERISTIC
-				components.Component.TrackSize
-				components.Component.c
-				components.Component.c_2
-				components.Component.EngineMomentum
-				components.Component.BrakeMomentum
-				components.Component.AirFriction
-				components.Component.Landscape
+				components.Driver.inGaspedPosition
+				components.Driver.inBreakpedPosition
 			/end DEF_CHARACTERISTIC
-			/begin IN_MEASUREMENT
+			/begin OUT_MEASUREMENT
+				components.breakpedMessage.breakpedPosition
 				components.gaspedMessage.gaspedPosition
-			/end IN_MEASUREMENT
+			/end OUT_MEASUREMENT
 			/begin LOC_MEASUREMENT
-				components.Component.breakposTest
-				components.Component.dh
-				components.Component.ds
-				components.Component.dt_Renamed
-				components.Component.h
-				components.Component.momentum
-				components.Component.s
-				components.Component.v
-				components.Component.v_2
-				components.Component.v_3
+				components.Driver.accState
+				components.Driver.turnAccOff
+				components.Driver.turnAccOn
 			/end LOC_MEASUREMENT
 		/end FUNCTION
 		
-		/begin FUNCTION components.Driver
+		/begin FUNCTION components.Module
 			""
-			/begin OUT_MEASUREMENT
+			/begin IN_MEASUREMENT
+				components.breakpedMessage.breakpedPosition
 				components.gaspedMessage.gaspedPosition
-			/end OUT_MEASUREMENT
+			/end IN_MEASUREMENT
+			/begin LOC_MEASUREMENT
+				components.Module.dh
+				components.Module.dtime
+				components.Module.totalDistance
+				components.Module.trackPosition
+				components.Module.v
+			/end LOC_MEASUREMENT
+			/begin SUB_FUNCTION
+				components.Module.Component_instance
+			/end SUB_FUNCTION
+		/end FUNCTION
+		
+		/begin FUNCTION components.Module.Component_instance
+			""
+			/begin DEF_CHARACTERISTIC
+				components.Module.Component_instance.TrackSize
+				components.Module.Component_instance.EngineMomentum
+				components.Module.Component_instance.BrakeMomentum
+				components.Module.Component_instance.AirFriction
+				components.Module.Component_instance.Landscape
+			/end DEF_CHARACTERISTIC
+			/begin LOC_MEASUREMENT
+				components.Module.Component_instance.dh
+				components.Module.Component_instance.ds
+				components.Module.Component_instance.h
+				components.Module.Component_instance.momentum
+				components.Module.Component_instance.s
+				components.Module.Component_instance.v
+			/end LOC_MEASUREMENT
+		/end FUNCTION
+		
+		/begin FUNCTION components.ContinousTrack
+			""
+			/begin LOC_MEASUREMENT
+				components.ContinousTrack.totalDistance
+			/end LOC_MEASUREMENT
 		/end FUNCTION
 		
 		/begin RECORD_LAYOUT STANDARD_VALUE_R32
@@ -456,9 +570,11 @@
 			ROOT
 			/begin SUB_GROUP
 				components.DeltaTimeService
-				components.Component
-				components.gaspedMessage
 				components.Driver
+				components.gaspedMessage
+				components.breakpedMessage
+				components.Module
+				components.ContinousTrack
 			/end SUB_GROUP
 		/end GROUP
 		
@@ -466,28 +582,16 @@
 			""
 		/end GROUP
 		
-		/begin GROUP components.Component
+		/begin GROUP components.Driver
 			""
 			/begin REF_CHARACTERISTIC
-				components.Component.TrackSize
-				components.Component.c
-				components.Component.c_2
-				components.Component.EngineMomentum
-				components.Component.BrakeMomentum
-				components.Component.AirFriction
-				components.Component.Landscape
+				components.Driver.inGaspedPosition
+				components.Driver.inBreakpedPosition
 			/end REF_CHARACTERISTIC
 			/begin REF_MEASUREMENT
-				components.Component.breakposTest
-				components.Component.dh
-				components.Component.ds
-				components.Component.dt_Renamed
-				components.Component.h
-				components.Component.momentum
-				components.Component.s
-				components.Component.v
-				components.Component.v_2
-				components.Component.v_3
+				components.Driver.accState
+				components.Driver.turnAccOff
+				components.Driver.turnAccOn
 			/end REF_MEASUREMENT
 		/end GROUP
 		
@@ -498,8 +602,51 @@
 			/end REF_MEASUREMENT
 		/end GROUP
 		
-		/begin GROUP components.Driver
+		/begin GROUP components.breakpedMessage
 			""
+			/begin REF_MEASUREMENT
+				components.breakpedMessage.breakpedPosition
+			/end REF_MEASUREMENT
+		/end GROUP
+		
+		/begin GROUP components.Module
+			""
+			/begin REF_MEASUREMENT
+				components.Module.dh
+				components.Module.dtime
+				components.Module.totalDistance
+				components.Module.trackPosition
+				components.Module.v
+			/end REF_MEASUREMENT
+			/begin SUB_GROUP
+				components.Module.Component_instance
+			/end SUB_GROUP
+		/end GROUP
+		
+		/begin GROUP components.Module.Component_instance
+			""
+			/begin REF_CHARACTERISTIC
+				components.Module.Component_instance.TrackSize
+				components.Module.Component_instance.EngineMomentum
+				components.Module.Component_instance.BrakeMomentum
+				components.Module.Component_instance.AirFriction
+				components.Module.Component_instance.Landscape
+			/end REF_CHARACTERISTIC
+			/begin REF_MEASUREMENT
+				components.Module.Component_instance.dh
+				components.Module.Component_instance.ds
+				components.Module.Component_instance.h
+				components.Module.Component_instance.momentum
+				components.Module.Component_instance.s
+				components.Module.Component_instance.v
+			/end REF_MEASUREMENT
+		/end GROUP
+		
+		/begin GROUP components.ContinousTrack
+			""
+			/begin REF_MEASUREMENT
+				components.ContinousTrack.totalDistance
+			/end REF_MEASUREMENT
 		/end GROUP
 		
 	/end MODULE

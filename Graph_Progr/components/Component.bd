@@ -16,8 +16,18 @@ blockdiagramSpecification Main {
 		}
 	}
 	methodBody get_dh {
-		outPin active {
+		outPin {
 			connection_104
+		}
+	}
+	methodBody getPosition {
+		outPin {
+			connection_108
+		}
+	}
+	methodBody getTracksize {
+		outPin active {
+			connection_110
 		}
 	}
 	simpleIdentifier s at (131, 715) {
@@ -32,7 +42,7 @@ blockdiagramSpecification Main {
 	simpleIdentifier TrackSize at (141, 765) {
 		label at (0, -1)
 		outPin {
-			connection_5
+			connection_111, connection_5
 		}
 		sequenceCall {
 			inPin
@@ -52,7 +62,7 @@ blockdiagramSpecification Main {
 	if at (331, 731) {
 		inPin connection_6
 		ifControlFlowOutPin {
-			connection_2
+			connection_107
 		}
 		sequenceCall {
 			inPin connection_1
@@ -66,8 +76,11 @@ blockdiagramSpecification Main {
 	simpleIdentifier s at (511, 755) {
 		label at (0, -1)
 		inPin connection_3
-		outPin sequenceCall {
-			inPin connection_2
+		outPin {
+			connection_109
+		}
+		sequenceCall {
+			inPin connection_107
 		}
 	}
 	simpleIdentifier v at (11, 585) {
@@ -435,6 +448,22 @@ blockdiagramSpecification Main {
 		}
 		sequenceCall {
 			inPin connection_104
+		}
+	}
+	return at (581, 755) {
+		label at (0, 0)
+		inPin connection_109
+		sequenceCall {
+			inPin connection_108
+		}
+	}
+	return at (331, 795) {
+		label at (0, 0)
+		inPin connection_111 {
+			bendpoints (100, 0), (100, 30)
+		}
+		sequenceCall {
+			inPin connection_110
 		}
 	}
 }
