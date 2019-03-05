@@ -27,3 +27,11 @@ data interface accMomentumMessage {
 data interface accStateChange{
 	boolean newState=false;
 }
+
+data interface accMessage {
+	
+	boolean accIsActive = false;
+	
+	real accTargetSpeed = 0.0;
+	
+}

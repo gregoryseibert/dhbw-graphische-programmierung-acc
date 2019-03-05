@@ -1,10 +1,13 @@
 package components;
 
 static class Driver 
-writes gaspedMessage.gaspedPosition , breakpedMessage.breakpedPosition, accStateChange.newState{
+writes gaspedMessage.gaspedPosition , breakpedMessage.breakpedPosition, accStateChange.newState, accMessage.accIsActive, accMessage.accTargetSpeed {
 	
 	characteristic real inGaspedPosition = 0.0;
 	characteristic real inBreakpedPosition = 0.0;
+	
+	characteristic boolean accIsActive = false;
+	characteristic real accTargetSpeed = 0.0;
 	
 	boolean turnAccOn = false;
 	
@@ -46,6 +49,7 @@ writes gaspedMessage.gaspedPosition , breakpedMessage.breakpedPosition, accState
 		accStateChange.newState = newState; 
 		setAcc();
 		
-		
+		accMessage.accIsActive = accIsActive;
+		accMessage.accTargetSpeed = accTargetSpeed;
 	}
 }
