@@ -3,8 +3,7 @@ package components;
 type Table is table real -> real;
 type Field is table real, real -> real;
 
-class Component
-writes breakpedMessage.breakpedPosition {
+class Component {
 	real s;
 	characteristic real TrackSize = 1000.0;
 	real v;
