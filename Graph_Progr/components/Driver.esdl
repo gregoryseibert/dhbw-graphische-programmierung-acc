@@ -1,7 +1,7 @@
 package components;
 
 static class Driver 
-writes gaspedMessage.gaspedPosition , breakpedMessage.breakpedPosition{
+writes gaspedMessage.gaspedPosition , breakpedMessage.breakpedPosition, accStateChange.newState{
 	
 	characteristic real inGaspedPosition = 0.0;
 	characteristic real inBreakpedPosition = 0.0;
@@ -11,25 +11,26 @@ writes gaspedMessage.gaspedPosition , breakpedMessage.breakpedPosition{
 	boolean turnAccOff = false;
 	
 	boolean accState = false;
-	
+	boolean newState= false;
 	public void setAcc(){
 		
-		
-		if (turnAccOn && accState == false) {
+		newState=false;
+		if (turnAccOn && !accState) {
 			
 			accState = turnAccOn;
 			turnAccOn = false;
 			
 		}
 		
-		if (turnAccOff && accState == true) {
+		if (turnAccOff && accState) {
 			
-			accState = turnAccOff;
+			newState=true;
 			turnAccOff = false;
+			accState = turnAccOff;
 			
 		}
 		
-		if (turnAccOn == true && turnAccOff == true) {
+		if (turnAccOn == true && turnAccOff) {
 			
 			accState = false;
 			
@@ -42,7 +43,7 @@ writes gaspedMessage.gaspedPosition , breakpedMessage.breakpedPosition{
 	public void drive() {
 		gaspedMessage.gaspedPosition = inGaspedPosition;
 		breakpedMessage.breakpedPosition = inBreakpedPosition;
-		
+		accStateChange.newState = newState; 
 		setAcc();
 		
 		
