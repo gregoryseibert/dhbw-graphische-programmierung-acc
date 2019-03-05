@@ -67,9 +67,9 @@ blockdiagramSpecification Main {
 			}
 		}
 	}
-	complexIdentifier components.ContinousTrack at (361, 51) size (14, 8) {
+	complexIdentifier components.ContinuousTrack at (361, 51) size (14, 8) {
 		label at (0, 1)
-		methodCall components.ContinousTrack.getTrackPosition {
+		methodCall components.ContinuousTrack.getTrackPosition {
 			argumentPin position at (left, 0) connection_6
 			argumentPin ds at (left, 1) connection_7
 			argumentPin trackSize at (left, 2) connection_8
@@ -80,7 +80,7 @@ blockdiagramSpecification Main {
 				inPin
 			}
 		}
-		methodCall components.ContinousTrack.getTotalDistance {
+		methodCall components.ContinuousTrack.getTotalDistance {
 			returnPin at (right, 1) {
 				connection_20
 			}

@@ -1,6 +1,6 @@
 package components;
 
-static class ContinousTrack {
+static class ContinuousTrack {
 	real totalDistance = 0.0;
 	
 	public real getTrackPosition(real position, real ds, real trackSize) {
