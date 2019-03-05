@@ -2,7 +2,7 @@ package tests;
 
 import assertLib.Assert;
 
-import components.ContinousTrack;
+import components.ContinuousTrack;
 import components.Component;
 
 
@@ -26,8 +26,8 @@ static class SlopeTests {
 			Comp.calc(0.0, 100.0, 0.01);		
 			dh = Comp.get_dh();
 			ds = Comp.get_ds();
-			s= ContinousTrack.getTrackPosition(s,ds,TrackSize);
-			totaldist = ContinousTrack.getTotalDistance();
+			s= ContinuousTrack.getTrackPosition(s,ds,TrackSize);
+			totaldist = ContinuousTrack.getTotalDistance();
 			Assert.assertTrue(dh/ds <= 0.2);
 			Assert.assertTrue(dh/ds >= -0.2);		
 		}
