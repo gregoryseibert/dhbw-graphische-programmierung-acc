@@ -1,0 +1,6 @@
+classType components.DriverBlock
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin active
+	}
+}

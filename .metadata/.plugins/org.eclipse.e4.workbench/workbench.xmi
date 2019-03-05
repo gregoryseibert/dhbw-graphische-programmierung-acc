@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_-_AXoD9FEemAIuQJ4if3DA" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_-_AXoT9FEemAIuQJ4if3DA" bindingContexts="_-_BniT9FEemAIuQJ4if3DA">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;autoGaspedal.dat&quot; tooltip=&quot;Graph_Progr/tables/autoGaspedal.dat&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Graph_Progr/tables/autoGaspedal.dat&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;autoBrakepedal.dat&quot; tooltip=&quot;Graph_Progr/tables/autoBrakepedal.dat&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Graph_Progr/tables/autoBrakepedal.dat&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;autoACCSwitch.dat&quot; tooltip=&quot;Graph_Progr/tables/autoACCSwitch.dat&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Graph_Progr/tables/autoACCSwitch.dat&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;Landscap.dat&quot; tooltip=&quot;Graph_Progr/tables/Landscap.dat&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Graph_Progr/tables/Landscap.dat&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.esdl.Esdl&quot; name=&quot;Component.esdl&quot; tooltip=&quot;Graph_Progr/components/Component.esdl&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Graph_Progr/components/Component.esdl&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.esdl.Esdl&quot; name=&quot;Driver.esdl&quot; tooltip=&quot;Graph_Progr/components/Driver.esdl&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Graph_Progr/components/Driver.esdl&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.esdl.Esdl&quot; name=&quot;Module.esdl&quot; tooltip=&quot;Graph_Progr/components/Module.esdl&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Graph_Progr/components/Module.esdl&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.esdl.Esdl&quot; name=&quot;typdefLookups.esdl&quot; tooltip=&quot;Graph_Progr/components/typdefLookups.esdl&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Graph_Progr/components/typdefLookups.esdl&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.esdl.Esdl&quot; name=&quot;messagesDef.esdl&quot; tooltip=&quot;Graph_Progr/components/messagesDef.esdl&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Graph_Progr/components/messagesDef.esdl&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.esdl.Esdl&quot; name=&quot;ACC.esdl&quot; tooltip=&quot;Graph_Progr/components/ACC.esdl&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Graph_Progr/components/ACC.esdl&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.ascet.application.ui.editor&quot; name=&quot;TestDriver.app&quot; tooltip=&quot;Graph_Progr/TestDriver.app&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Graph_Progr/TestDriver.app&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.emf.common.ui.URIEditorInputFactory&quot; id=&quot;com.etas.ascet.blockdiagram.ui.editorID&quot; name=&quot;Module.bd&quot; tooltip=&quot;platform:/resource/Graph_Progr/components/Module.bd#//@specifications.0&quot;>&#xD;&#xA;&lt;persistable bundle=&quot;com.etas.ascet.blockdiagram.ui&quot; class=&quot;com.etas.ascet.blockdiagram.ui.editor.BlockdiagramURIEditorInput&quot; uri=&quot;platform:/resource/Graph_Progr/components/Module.bd#//@specifications.0&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.esdl.Esdl&quot; name=&quot;ComponentTest.esdl&quot; tooltip=&quot;Graph_Progr/tests/ComponentTest.esdl&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Graph_Progr/tests/ComponentTest.esdl&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.esdl.Esdl&quot; name=&quot;ContinousTrackTest.esdl&quot; tooltip=&quot;Graph_Progr/tests/ContinousTrackTest.esdl&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Graph_Progr/tests/ContinousTrackTest.esdl&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.ascet.application.ui.editor&quot; name=&quot;ComponentTest.app&quot; tooltip=&quot;Graph_Progr/components/ComponentTest.app&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Graph_Progr/components/ComponentTest.app&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.esdl.Esdl&quot; name=&quot;DriverBlock.esdl&quot; tooltip=&quot;Graph_Progr/components/DriverBlock.esdl&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Graph_Progr/components/DriverBlock.esdl&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.esdl.Esdl&quot; name=&quot;Driver.esdl&quot; tooltip=&quot;Graph_Progr/components/Driver.esdl&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Graph_Progr/components/Driver.esdl&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.esdl.Esdl&quot; name=&quot;Component.esdl&quot; tooltip=&quot;Graph_Progr/components/Component.esdl&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Graph_Progr/components/Component.esdl&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.emf.common.ui.URIEditorInputFactory&quot; id=&quot;com.etas.ascet.blockdiagram.ui.editorID&quot; name=&quot;DriverBlock.bd&quot; tooltip=&quot;platform:/resource/Graph_Progr/components/DriverBlock.bd#//@specifications.0&quot;>&#xD;&#xA;&lt;persistable bundle=&quot;com.etas.ascet.blockdiagram.ui&quot; class=&quot;com.etas.ascet.blockdiagram.ui.editor.BlockdiagramURIEditorInput&quot; uri=&quot;platform:/resource/Graph_Progr/components/DriverBlock.bd#//@specifications.0&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.emf.common.ui.URIEditorInputFactory&quot; id=&quot;com.etas.ascet.blockdiagram.ui.editorID&quot; name=&quot;Module.bd&quot; tooltip=&quot;platform:/resource/Graph_Progr/components/Module.bd#//@specifications.0&quot;>&#xD;&#xA;&lt;persistable bundle=&quot;com.etas.ascet.blockdiagram.ui&quot; class=&quot;com.etas.ascet.blockdiagram.ui.editor.BlockdiagramURIEditorInput&quot; uri=&quot;platform:/resource/Graph_Progr/components/Module.bd#//@specifications.0&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.esdl.Esdl&quot; name=&quot;Module.esdl&quot; tooltip=&quot;Graph_Progr/components/Module.esdl&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Graph_Progr/components/Module.esdl&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;autoGaspedal.dat&quot; tooltip=&quot;Graph_Progr/tables/autoGaspedal.dat&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Graph_Progr/tables/autoGaspedal.dat&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;autoBrakepedal.dat&quot; tooltip=&quot;Graph_Progr/tables/autoBrakepedal.dat&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Graph_Progr/tables/autoBrakepedal.dat&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;autoACCSwitch.dat&quot; tooltip=&quot;Graph_Progr/tables/autoACCSwitch.dat&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Graph_Progr/tables/autoACCSwitch.dat&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;Landscap.dat&quot; tooltip=&quot;Graph_Progr/tables/Landscap.dat&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Graph_Progr/tables/Landscap.dat&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.esdl.Esdl&quot; name=&quot;typdefLookups.esdl&quot; tooltip=&quot;Graph_Progr/components/typdefLookups.esdl&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Graph_Progr/components/typdefLookups.esdl&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.esdl.Esdl&quot; name=&quot;messagesDef.esdl&quot; tooltip=&quot;Graph_Progr/components/messagesDef.esdl&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Graph_Progr/components/messagesDef.esdl&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.esdl.Esdl&quot; name=&quot;ACC.esdl&quot; tooltip=&quot;Graph_Progr/components/ACC.esdl&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Graph_Progr/components/ACC.esdl&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.ascet.application.ui.editor&quot; name=&quot;TestDriver.app&quot; tooltip=&quot;Graph_Progr/TestDriver.app&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Graph_Progr/TestDriver.app&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.etas.esdl.Esdl&quot; name=&quot;ComponentTest.esdl&quot; tooltip=&quot;Graph_Progr/tests/ComponentTest.esdl&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Graph_Progr/tests/ComponentTest.esdl&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_-_AXoT9FEemAIuQJ4if3DA" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_-_AXoj9FEemAIuQJ4if3DA" x="78" y="78" width="1024" height="768">
@@ -48,6 +48,7 @@
           <children xsi:type="basic:PartSashContainer" xmi:id="_-_AXpT9FEemAIuQJ4if3DA" selectedElement="_-_AXrD9FEemAIuQJ4if3DA" horizontal="true">
             <children xsi:type="basic:PartSashContainer" xmi:id="_-_AXpj9FEemAIuQJ4if3DA" containerData="2000" selectedElement="_-_AXpz9FEemAIuQJ4if3DA">
               <children xsi:type="basic:PartStack" xmi:id="_-_AXpz9FEemAIuQJ4if3DA" elementId="left" containerData="7000" selectedElement="_-_AXqD9FEemAIuQJ4if3DA">
+                <tags>noFocus</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_-_AXqD9FEemAIuQJ4if3DA" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_-_BALz9FEemAIuQJ4if3DA"/>
               </children>
               <children xsi:type="basic:PartStack" xmi:id="_-_AXqT9FEemAIuQJ4if3DA" elementId="leftBottom" containerData="3000" selectedElement="_-_AXqj9FEemAIuQJ4if3DA">
@@ -75,7 +76,7 @@
                   <children xsi:type="advanced:Placeholder" xmi:id="_-_A-sz9FEemAIuQJ4if3DA" elementId="com.etas.ascet.ui.views.representation.classrepresentationview" toBeRendered="false" ref="_-_BAzj9FEemAIuQJ4if3DA"/>
                 </children>
               </children>
-              <children xsi:type="basic:PartSashContainer" xmi:id="_-_A-tD9FEemAIuQJ4if3DA" containerData="2000" selectedElement="_-_A-tz9FEemAIuQJ4if3DA">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_-_A-tD9FEemAIuQJ4if3DA" containerData="2000" selectedElement="_-_A-tT9FEemAIuQJ4if3DA">
                 <children xsi:type="basic:PartStack" xmi:id="_-_A-tT9FEemAIuQJ4if3DA" elementId="right" containerData="5000" selectedElement="_-_A-tj9FEemAIuQJ4if3DA">
                   <children xsi:type="advanced:Placeholder" xmi:id="_-_A-tj9FEemAIuQJ4if3DA" elementId="org.eclipse.ui.views.ContentOutline" ref="_-_BAeD9FEemAIuQJ4if3DA"/>
                 </children>
@@ -122,71 +123,10 @@
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_-_BADD9FEemAIuQJ4if3DA" elementId="org.eclipse.ui.editorss" selectedElement="_-_BADT9FEemAIuQJ4if3DA">
       <children xsi:type="basic:PartSashContainer" xmi:id="_-_BADT9FEemAIuQJ4if3DA" selectedElement="_-_BADj9FEemAIuQJ4if3DA" horizontal="true">
-        <children xsi:type="basic:PartStack" xmi:id="_-_BADj9FEemAIuQJ4if3DA" elementId="PartStack@613b400" containerData="9000" selectedElement="_-_BAIj9FEemAIuQJ4if3DA">
+        <children xsi:type="basic:PartStack" xmi:id="_-_BADj9FEemAIuQJ4if3DA" elementId="PartStack@613b400" containerData="9000" selectedElement="_djQ8cD9MEemHNr7LVwp3aw">
           <tags>active</tags>
-          <tags>noFocus</tags>
-          <children xsi:type="basic:Part" xmi:id="_-_BADz9FEemAIuQJ4if3DA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Module.bd/Main" iconURI="platform:/plugin/com.etas.ascet.ui.icons/icons/view16/blockdiagram_16.png" closeable="true">
-            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.etas.ascet.blockdiagram.ui.editorID&quot; name=&quot;Module.bd&quot; partName=&quot;Module.bd/Main&quot; title=&quot;Module.bd/Main&quot; tooltip=&quot;Graph_Progr/components/Module.bd/Main&quot;>&#xD;&#xA;&lt;input bundle=&quot;com.etas.ascet.blockdiagram.ui&quot; class=&quot;com.etas.ascet.blockdiagram.ui.editor.BlockdiagramURIEditorInput&quot; factoryID=&quot;org.eclipse.emf.common.ui.URIEditorInputFactory&quot; uri=&quot;platform:/resource/Graph_Progr/components/Module.bd#//@specifications.0&quot;/>&#xD;&#xA;&lt;/editor>"/>
-            <tags>Editor</tags>
-            <tags>com.etas.ascet.blockdiagram.ui.editorID</tags>
-            <tags>removeOnHide</tags>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_-_BAED9FEemAIuQJ4if3DA" elementId="com.etas.ascet.blockdiagram.ui.editorID">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:com.etas.ascet.blockdiagram.ui.editorID</tags>
-            </menus>
-          </children>
-          <children xsi:type="basic:Part" xmi:id="_-_BAET9FEemAIuQJ4if3DA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="TestDriver.app" iconURI="platform:/plugin/com.etas.ascet.ui.icons/icons/view16/application.png" closeable="true">
-            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.etas.ascet.application.ui.editor&quot; name=&quot;TestDriver.app&quot; partName=&quot;TestDriver.app&quot; title=&quot;TestDriver.app&quot; tooltip=&quot;Graph_Progr/TestDriver.app&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Graph_Progr/TestDriver.app&quot;/>&#xD;&#xA;&lt;/editor>"/>
-            <tags>Editor</tags>
-            <tags>com.etas.ascet.application.ui.editor</tags>
-            <tags>removeOnHide</tags>
-          </children>
-          <children xsi:type="basic:Part" xmi:id="_-_BAEj9FEemAIuQJ4if3DA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Driver.esdl" iconURI="platform:/plugin/com.etas.esdl.ui/icons/obj16/file_obj.png" closeable="true">
-            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.etas.esdl.Esdl&quot; name=&quot;Driver.esdl&quot; partName=&quot;Driver.esdl&quot; title=&quot;Driver.esdl&quot; tooltip=&quot;Graph_Progr/components/Driver.esdl&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Graph_Progr/components/Driver.esdl&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;987&quot; selectionTopPixel=&quot;24&quot;/>&#xD;&#xA;&lt;/editor>"/>
-            <tags>Editor</tags>
-            <tags>com.etas.esdl.Esdl</tags>
-            <tags>removeOnHide</tags>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_-_BAEz9FEemAIuQJ4if3DA" elementId="#TextEditorContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:#TextEditorContext</tags>
-              <tags>popup:com.etas.esdl.Esdl.EditorContext</tags>
-              <tags>popup:#AbstractTextEditorContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_-_BAFD9FEemAIuQJ4if3DA" elementId="#TextRulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:#TextRulerContext</tags>
-              <tags>popup:com.etas.esdl.Esdl.RulerContext</tags>
-              <tags>popup:#AbstractTextEditorRulerContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_-_BAFT9FEemAIuQJ4if3DA" elementId="#OverviewRulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:#OverviewRulerContext</tags>
-            </menus>
-          </children>
-          <children xsi:type="basic:Part" xmi:id="_-_BAFj9FEemAIuQJ4if3DA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ACC.esdl" iconURI="platform:/plugin/com.etas.esdl.ui/icons/obj16/file_obj.png" closeable="true">
-            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.etas.esdl.Esdl&quot; name=&quot;ACC.esdl&quot; partName=&quot;ACC.esdl&quot; title=&quot;ACC.esdl&quot; tooltip=&quot;Graph_Progr/components/ACC.esdl&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Graph_Progr/components/ACC.esdl&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
-            <tags>Editor</tags>
-            <tags>com.etas.esdl.Esdl</tags>
-            <tags>removeOnHide</tags>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_-_BAFz9FEemAIuQJ4if3DA" elementId="#TextEditorContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:#TextEditorContext</tags>
-              <tags>popup:com.etas.esdl.Esdl.EditorContext</tags>
-              <tags>popup:#AbstractTextEditorContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_-_BAGD9FEemAIuQJ4if3DA" elementId="#TextRulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:#TextRulerContext</tags>
-              <tags>popup:com.etas.esdl.Esdl.RulerContext</tags>
-              <tags>popup:#AbstractTextEditorRulerContext</tags>
-            </menus>
-            <menus xsi:type="menu:PopupMenu" xmi:id="_-_BAGT9FEemAIuQJ4if3DA" elementId="#OverviewRulerContext">
-              <tags>menuContribution:popup</tags>
-              <tags>popup:#OverviewRulerContext</tags>
-            </menus>
-          </children>
           <children xsi:type="basic:Part" xmi:id="_-_BAGj9FEemAIuQJ4if3DA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="autoBrakepedal.dat" iconURI="platform:/plugin/org.eclipse.ui.editors/icons/full/obj16/file_obj.gif" closeable="true">
-            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;autoBrakepedal.dat&quot; partName=&quot;autoBrakepedal.dat&quot; title=&quot;autoBrakepedal.dat&quot; tooltip=&quot;Graph_Progr/tables/autoBrakepedal.dat&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Graph_Progr/tables/autoBrakepedal.dat&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;124&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;autoBrakepedal.dat&quot; partName=&quot;autoBrakepedal.dat&quot; title=&quot;autoBrakepedal.dat&quot; tooltip=&quot;Graph_Progr/tables/autoBrakepedal.dat&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Graph_Progr/tables/autoBrakepedal.dat&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;163&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
             <tags>Editor</tags>
             <tags>org.eclipse.ui.DefaultTextEditor</tags>
             <tags>removeOnHide</tags>
@@ -208,7 +148,7 @@
             </menus>
           </children>
           <children xsi:type="basic:Part" xmi:id="_-_BAHj9FEemAIuQJ4if3DA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="autoACCSwitch.dat" iconURI="platform:/plugin/org.eclipse.ui.editors/icons/full/obj16/file_obj.gif" closeable="true">
-            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;autoACCSwitch.dat&quot; partName=&quot;autoACCSwitch.dat&quot; title=&quot;autoACCSwitch.dat&quot; tooltip=&quot;Graph_Progr/tables/autoACCSwitch.dat&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Graph_Progr/tables/autoACCSwitch.dat&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;121&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;autoACCSwitch.dat&quot; partName=&quot;autoACCSwitch.dat&quot; title=&quot;autoACCSwitch.dat&quot; tooltip=&quot;Graph_Progr/tables/autoACCSwitch.dat&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Graph_Progr/tables/autoACCSwitch.dat&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;56&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
             <tags>Editor</tags>
             <tags>org.eclipse.ui.DefaultTextEditor</tags>
             <tags>removeOnHide</tags>
@@ -230,11 +170,10 @@
             </menus>
           </children>
           <children xsi:type="basic:Part" xmi:id="_-_BAIj9FEemAIuQJ4if3DA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="autoGaspedal.dat" iconURI="platform:/plugin/org.eclipse.ui.editors/icons/full/obj16/file_obj.gif" closeable="true">
-            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;autoGaspedal.dat&quot; partName=&quot;autoGaspedal.dat&quot; title=&quot;autoGaspedal.dat&quot; tooltip=&quot;Graph_Progr/tables/autoGaspedal.dat&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Graph_Progr/tables/autoGaspedal.dat&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;124&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;autoGaspedal.dat&quot; partName=&quot;autoGaspedal.dat&quot; title=&quot;autoGaspedal.dat&quot; tooltip=&quot;Graph_Progr/tables/autoGaspedal.dat&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Graph_Progr/tables/autoGaspedal.dat&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;156&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
             <tags>Editor</tags>
             <tags>org.eclipse.ui.DefaultTextEditor</tags>
             <tags>removeOnHide</tags>
-            <tags>active</tags>
             <menus xsi:type="menu:PopupMenu" xmi:id="_-_BAIz9FEemAIuQJ4if3DA" elementId="#TextEditorContext">
               <tags>menuContribution:popup</tags>
               <tags>popup:#TextEditorContext</tags>
@@ -252,11 +191,26 @@
               <tags>popup:#OverviewRulerContext</tags>
             </menus>
           </children>
-        </children>
-        <children xsi:type="basic:PartStack" xmi:id="_-_BAJj9FEemAIuQJ4if3DA" elementId="org.eclipse.e4.primaryDataStack" containerData="1000" selectedElement="_-_BAKD9FEemAIuQJ4if3DA">
-          <tags>org.eclipse.e4.primaryDataStack</tags>
-          <tags>EditorStack</tags>
-          <children xsi:type="advanced:Placeholder" xmi:id="_-_BAJz9FEemAIuQJ4if3DA" elementId="org.eclipse.ui.browser.view" toBeRendered="false" ref="_-_BAyT9FEemAIuQJ4if3DA"/>
+          <children xsi:type="basic:Part" xmi:id="_NuD-UD9MEemHNr7LVwp3aw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Module.bd/Main" iconURI="platform:/plugin/com.etas.ascet.ui.icons/icons/view16/blockdiagram_16.png" closeable="true">
+            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.etas.ascet.blockdiagram.ui.editorID&quot; name=&quot;Module.bd&quot; partName=&quot;Module.bd/Main&quot; title=&quot;Module.bd/Main&quot; tooltip=&quot;Graph_Progr/components/Module.bd/Main&quot;>&#xD;&#xA;&lt;input bundle=&quot;com.etas.ascet.blockdiagram.ui&quot; class=&quot;com.etas.ascet.blockdiagram.ui.editor.BlockdiagramURIEditorInput&quot; factoryID=&quot;org.eclipse.emf.common.ui.URIEditorInputFactory&quot; uri=&quot;platform:/resource/Graph_Progr/components/Module.bd#//@specifications.0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+            <tags>Editor</tags>
+            <tags>com.etas.ascet.blockdiagram.ui.editorID</tags>
+            <tags>removeOnHide</tags>
+          </children>
+          <children xsi:type="basic:Part" xmi:id="_POPXoD9MEemHNr7LVwp3aw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Module.esdl" iconURI="platform:/plugin/com.etas.esdl.ui/icons/obj16/file_obj.png" closeable="true">
+            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.etas.esdl.Esdl&quot; name=&quot;Module.esdl&quot; partName=&quot;Module.esdl&quot; title=&quot;Module.esdl&quot; tooltip=&quot;Graph_Progr/components/Module.esdl&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Graph_Progr/components/Module.esdl&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;493&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+            <tags>Editor</tags>
+            <tags>com.etas.esdl.Esdl</tags>
+            <tags>removeOnHide</tags>
+          </children>
+          <children xsi:type="basic:Part" xmi:id="_djQ8cD9MEemHNr7LVwp3aw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="DriverBlock.bd/Main" iconURI="platform:/plugin/com.etas.ascet.ui.icons/icons/view16/blockdiagram_16.png" closeable="true">
+            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.etas.ascet.blockdiagram.ui.editorID&quot; name=&quot;DriverBlock.bd&quot; partName=&quot;DriverBlock.bd/Main&quot; title=&quot;DriverBlock.bd/Main&quot; tooltip=&quot;Graph_Progr/components/DriverBlock.bd/Main&quot;>&#xD;&#xA;&lt;input bundle=&quot;com.etas.ascet.blockdiagram.ui&quot; class=&quot;com.etas.ascet.blockdiagram.ui.editor.BlockdiagramURIEditorInput&quot; factoryID=&quot;org.eclipse.emf.common.ui.URIEditorInputFactory&quot; uri=&quot;platform:/resource/Graph_Progr/components/DriverBlock.bd#//@specifications.0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+            <tags>Editor</tags>
+            <tags>com.etas.ascet.blockdiagram.ui.editorID</tags>
+            <tags>removeOnHide</tags>
+            <tags>active</tags>
+            <tags>activeOnClose</tags>
+          </children>
           <children xsi:type="basic:Part" xmi:id="_-_BAKD9FEemAIuQJ4if3DA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Component.bd/Main" iconURI="platform:/plugin/com.etas.ascet.ui.icons/icons/view16/blockdiagram_16.png" closeable="true">
             <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.etas.ascet.blockdiagram.ui.editorID&quot; name=&quot;Component.bd&quot; partName=&quot;Component.bd/Main&quot; title=&quot;Component.bd/Main&quot; tooltip=&quot;Graph_Progr/components/Component.bd/Main&quot;>&#xD;&#xA;&lt;input bundle=&quot;com.etas.ascet.blockdiagram.ui&quot; class=&quot;com.etas.ascet.blockdiagram.ui.editor.BlockdiagramURIEditorInput&quot; factoryID=&quot;org.eclipse.emf.common.ui.URIEditorInputFactory&quot; uri=&quot;platform:/resource/Graph_Progr/components/Component.bd#//@specifications.0&quot;/>&#xD;&#xA;&lt;/editor>"/>
             <tags>Editor</tags>
@@ -271,6 +225,29 @@
               <tags>popup:com.etas.ascet.blockdiagram.ui.editorID</tags>
             </menus>
           </children>
+          <children xsi:type="basic:Part" xmi:id="_Hxh5AD9NEemHNr7LVwp3aw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="DriverBlock.esdl" iconURI="platform:/plugin/com.etas.esdl.ui/icons/obj16/file_obj.png" closeable="true">
+            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.etas.esdl.Esdl&quot; name=&quot;DriverBlock.esdl&quot; partName=&quot;DriverBlock.esdl&quot; title=&quot;DriverBlock.esdl&quot; tooltip=&quot;Graph_Progr/components/DriverBlock.esdl&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Graph_Progr/components/DriverBlock.esdl&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;599&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+            <tags>Editor</tags>
+            <tags>com.etas.esdl.Esdl</tags>
+            <tags>removeOnHide</tags>
+          </children>
+          <children xsi:type="basic:Part" xmi:id="_yjCskD9NEemHNr7LVwp3aw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Component.esdl" iconURI="platform:/plugin/com.etas.esdl.ui/icons/obj16/file_obj.png" closeable="true">
+            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.etas.esdl.Esdl&quot; name=&quot;Component.esdl&quot; partName=&quot;Component.esdl&quot; title=&quot;Component.esdl&quot; tooltip=&quot;Graph_Progr/components/Component.esdl&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Graph_Progr/components/Component.esdl&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;40&quot; selectionOffset=&quot;1281&quot; selectionTopPixel=&quot;191&quot;/>&#xD;&#xA;&lt;/editor>"/>
+            <tags>Editor</tags>
+            <tags>com.etas.esdl.Esdl</tags>
+            <tags>removeOnHide</tags>
+          </children>
+          <children xsi:type="basic:Part" xmi:id="_2ggnsD9NEemHNr7LVwp3aw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Driver.esdl" iconURI="platform:/plugin/com.etas.esdl.ui/icons/obj16/file_obj.png" closeable="true">
+            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.etas.esdl.Esdl&quot; name=&quot;Driver.esdl&quot; partName=&quot;Driver.esdl&quot; title=&quot;Driver.esdl&quot; tooltip=&quot;Graph_Progr/components/Driver.esdl&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Graph_Progr/components/Driver.esdl&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+            <tags>Editor</tags>
+            <tags>com.etas.esdl.Esdl</tags>
+            <tags>removeOnHide</tags>
+          </children>
+        </children>
+        <children xsi:type="basic:PartStack" xmi:id="_-_BAJj9FEemAIuQJ4if3DA" elementId="org.eclipse.e4.primaryDataStack" containerData="1000" selectedElement="_-_BAKz9FEemAIuQJ4if3DA">
+          <tags>org.eclipse.e4.primaryDataStack</tags>
+          <tags>EditorStack</tags>
+          <children xsi:type="advanced:Placeholder" xmi:id="_-_BAJz9FEemAIuQJ4if3DA" elementId="org.eclipse.ui.browser.view" toBeRendered="false" ref="_-_BAyT9FEemAIuQJ4if3DA"/>
           <children xsi:type="basic:Part" xmi:id="_-_BAKz9FEemAIuQJ4if3DA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Time.esdl" iconURI="platform:/plugin/com.etas.esdl.ui/icons/obj16/file_obj.png" closeable="true">
             <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.etas.esdl.Esdl&quot; name=&quot;Time.esdl&quot; partName=&quot;Time.esdl&quot; title=&quot;Time.esdl&quot; tooltip=&quot;Graph_Progr/components/Time.esdl&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Graph_Progr/components/Time.esdl&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
             <tags>Editor</tags>
@@ -559,107 +536,20 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_-_BA6j9FEemAIuQJ4if3DA" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BA6z9FEemAIuQJ4if3DA" elementId="new.group">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BA7D9FEemAIuQJ4if3DA" elementId="newWizardDropDown">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BA7T9FEemAIuQJ4if3DA" elementId="new.ext" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BA7j9FEemAIuQJ4if3DA" elementId="save.group" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BA7z9FEemAIuQJ4if3DA" elementId="save">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BA8D9FEemAIuQJ4if3DA" elementId="saveAll">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BA8T9FEemAIuQJ4if3DA" elementId="save.ext" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_-_BA8j9FEemAIuQJ4if3DA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_-_C1-T9FEemAIuQJ4if3DA"/>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BA8z9FEemAIuQJ4if3DA" elementId="print.ext" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BA9D9FEemAIuQJ4if3DA" elementId="build.group">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BA9T9FEemAIuQJ4if3DA" elementId="build.ext" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BA9j9FEemAIuQJ4if3DA" elementId="additions">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BA9z9FEemAIuQJ4if3DA" elementId="build">
-          <tags>Opaque</tags>
-        </children>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_hiPv8D9LEemHNr7LVwp3aw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_-_C1-T9FEemAIuQJ4if3DA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_-_BA-D9FEemAIuQJ4if3DA" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
         <children xsi:type="menu:ToolBarSeparator" xmi:id="_-_BA-T9FEemAIuQJ4if3DA" elementId="additions" toBeRendered="false"/>
       </children>
-      <children xsi:type="menu:ToolBar" xmi:id="_-_BA-j9FEemAIuQJ4if3DA" elementId="org.eclipse.ui.edit.text.actionSet.presentation">
+      <children xsi:type="menu:ToolBar" xmi:id="_-_BA-j9FEemAIuQJ4if3DA" elementId="org.eclipse.ui.edit.text.actionSet.presentation" visible="false">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BA-z9FEemAIuQJ4if3DA" elementId="Presentation">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BA_D9FEemAIuQJ4if3DA" elementId="org.eclipse.ui.edit.text.toggleWordWrap">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BA_T9FEemAIuQJ4if3DA" elementId="org.eclipse.ui.edit.text.toggleBlockSelectionMode">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BA_j9FEemAIuQJ4if3DA" elementId="org.eclipse.ui.edit.text.toggleShowWhitespaceCharacters">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BA_z9FEemAIuQJ4if3DA" elementId="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly" visible="false">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_-_BBND9FEemAIuQJ4if3DA" elementId="org.eclipse.debug.ui.launchActionSet">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBNT9FEemAIuQJ4if3DA" elementId="debug">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBNj9FEemAIuQJ4if3DA" elementId="org.eclipse.debug.internal.ui.actions.DebugDropDownAction" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBNz9FEemAIuQJ4if3DA" elementId="org.eclipse.debug.internal.ui.actions.RunDropDownAction">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBOD9FEemAIuQJ4if3DA" elementId="org.eclipse.ui.externaltools.ExternalToolMenuDelegateToolbar">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBOT9FEemAIuQJ4if3DA" elementId="debug">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBOj9FEemAIuQJ4if3DA" elementId="org.eclipse.debug.internal.ui.actions.DebugDropDownAction" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBOz9FEemAIuQJ4if3DA" elementId="org.eclipse.debug.internal.ui.actions.RunDropDownAction">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBPD9FEemAIuQJ4if3DA" elementId="org.eclipse.ui.externaltools.ExternalToolMenuDelegateToolbar">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_-_BBPT9FEemAIuQJ4if3DA" elementId="org.eclipse.search.searchActionSet">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBPj9FEemAIuQJ4if3DA" elementId="Search">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBPz9FEemAIuQJ4if3DA" elementId="org.eclipse.search.OpenSearchDialogPage">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBQD9FEemAIuQJ4if3DA" elementId="Search">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBQT9FEemAIuQJ4if3DA" elementId="org.eclipse.search.OpenSearchDialogPage">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_-_BBQj9FEemAIuQJ4if3DA" elementId="group.nav" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -667,135 +557,9 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_-_BBRD9FEemAIuQJ4if3DA" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBRT9FEemAIuQJ4if3DA" elementId="history.group">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBRj9FEemAIuQJ4if3DA" elementId="group.application" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBRz9FEemAIuQJ4if3DA" elementId="backardHistory">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBSD9FEemAIuQJ4if3DA" elementId="forwardHistory">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBST9FEemAIuQJ4if3DA" elementId="pin.group">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_-_BBSj9FEemAIuQJ4if3DA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_-_C1az9FEemAIuQJ4if3DA"/>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBSz9FEemAIuQJ4if3DA" elementId="org.eclipse.ui.edit.text.gotoNextAnnotation">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBTD9FEemAIuQJ4if3DA" elementId="org.eclipse.ui.edit.text.gotoPreviousAnnotation">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBTT9FEemAIuQJ4if3DA" elementId="org.eclipse.ui.edit.text.gotoLastEditPosition">
-          <tags>Opaque</tags>
-        </children>
-      </children>
-      <children xsi:type="menu:ToolBar" xmi:id="_-_BBTj9FEemAIuQJ4if3DA" elementId="com.etas.ascet.blockdiagram.ui.editorID" visible="false">
-        <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBTz9FEemAIuQJ4if3DA" elementId="org.eclipse.gef.align_left">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBUD9FEemAIuQJ4if3DA" elementId="org.eclipse.gef.align_center">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBUT9FEemAIuQJ4if3DA" elementId="org.eclipse.gef.align_right">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBUj9FEemAIuQJ4if3DA" elementId="org.eclipse.gef.align_top">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBUz9FEemAIuQJ4if3DA" elementId="org.eclipse.gef.align_middle">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBVD9FEemAIuQJ4if3DA" elementId="org.eclipse.gef.align_bottom">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBVT9FEemAIuQJ4if3DA">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBVj9FEemAIuQJ4if3DA" elementId="org.eclipse.gef.zoom_widget">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBVz9FEemAIuQJ4if3DA">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBWD9FEemAIuQJ4if3DA" elementId="undo">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBWT9FEemAIuQJ4if3DA" elementId="redo">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBWj9FEemAIuQJ4if3DA">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBWz9FEemAIuQJ4if3DA" elementId="delete">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBXD9FEemAIuQJ4if3DA">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBXT9FEemAIuQJ4if3DA" elementId="com.etas.ascet.blockdiagram.ui.action.showcontrolflowconnectionaction">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBXj9FEemAIuQJ4if3DA" elementId="org.eclipse.gef.align_left">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBXz9FEemAIuQJ4if3DA" elementId="org.eclipse.gef.align_center">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBYD9FEemAIuQJ4if3DA" elementId="org.eclipse.gef.align_right">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBYT9FEemAIuQJ4if3DA" elementId="org.eclipse.gef.align_top">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBYj9FEemAIuQJ4if3DA" elementId="org.eclipse.gef.align_middle">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBYz9FEemAIuQJ4if3DA" elementId="org.eclipse.gef.align_bottom">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBZD9FEemAIuQJ4if3DA">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBZT9FEemAIuQJ4if3DA" elementId="org.eclipse.gef.zoom_widget">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBZj9FEemAIuQJ4if3DA">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBZz9FEemAIuQJ4if3DA" elementId="undo">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBaD9FEemAIuQJ4if3DA" elementId="redo">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBaT9FEemAIuQJ4if3DA">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBaj9FEemAIuQJ4if3DA" elementId="delete">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBaz9FEemAIuQJ4if3DA">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBbD9FEemAIuQJ4if3DA" elementId="com.etas.ascet.blockdiagram.ui.action.showcontrolflowconnectionaction">
-          <tags>Opaque</tags>
-        </children>
-      </children>
-      <children xsi:type="menu:ToolBar" xmi:id="_-_BBbT9FEemAIuQJ4if3DA" elementId="com.etas.esdl.Esdl" visible="false">
-        <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBbj9FEemAIuQJ4if3DA" elementId="ui.editor.markOccurrences">
-          <tags>Opaque</tags>
-        </children>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_hiXEsD9LEemHNr7LVwp3aw" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_-_C1az9FEemAIuQJ4if3DA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_-_BBbz9FEemAIuQJ4if3DA" elementId="com.etas.ascet.application.ui.editor" visible="false">
-        <tags>Draggable</tags>
-      </children>
-      <children xsi:type="menu:ToolBar" xmi:id="_-_BBcD9FEemAIuQJ4if3DA" elementId="org.eclipse.ui.DefaultTextEditor" visible="false">
         <tags>Draggable</tags>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_-_BBcT9FEemAIuQJ4if3DA" elementId="group.editor" toBeRendered="false">
@@ -808,12 +572,6 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_-_BBdT9FEemAIuQJ4if3DA" elementId="org.eclipse.ui.workbench.help" visible="false">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBdj9FEemAIuQJ4if3DA" elementId="group.help">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_-_BBdz9FEemAIuQJ4if3DA" elementId="group.application" visible="false">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolControl" xmi:id="_-_BBeD9FEemAIuQJ4if3DA" elementId="PerspectiveSpacer" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
         <tags>stretch</tags>
@@ -1845,6 +1603,23 @@
     <tags>View</tags>
     <tags>categoryTag:XML</tags>
   </descriptors>
+  <trimContributions xmi:id="_2r10UF9tEeO-yojH_y4TJA" elementId="org.eclipse.ui.ide.application.trimcontribution.QuickAccess" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" toBeRendered="false" parentId="org.eclipse.ui.main.toolbar" positionInParent="last">
+    <children xsi:type="menu:ToolControl" xmi:id="_76uUAF9tEeO-yojH_y4TJA" elementId="Spacer Glue" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
+      <tags>glue</tags>
+      <tags>move_after:PerspectiveSpacer</tags>
+      <tags>SHOW_RESTORE_MENU</tags>
+    </children>
+    <children xsi:type="menu:ToolControl" xmi:id="_8tJPcF9tEeO-yojH_y4TJA" elementId="SearchField" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.quickaccess.SearchField">
+      <tags>move_after:Spacer Glue</tags>
+      <tags>HIDEABLE</tags>
+      <tags>SHOW_RESTORE_MENU</tags>
+    </children>
+    <children xsi:type="menu:ToolControl" xmi:id="_9LgmcF9tEeO-yojH_y4TJA" elementId="Search-PS Glue" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
+      <tags>glue</tags>
+      <tags>move_after:SearchField</tags>
+      <tags>SHOW_RESTORE_MENU</tags>
+    </children>
+  </trimContributions>
   <commands xmi:id="_-_C0Gz9FEemAIuQJ4if3DA" elementId="org.eclipse.jdt.ui.correction.inlineLocal.assist" commandName="Quick Assist - Inline local variable" description="Invokes quick assist and selects 'Inline local variable'" category="_-_C3hT9FEemAIuQJ4if3DA"/>
   <commands xmi:id="_-_C0HD9FEemAIuQJ4if3DA" elementId="org.eclipse.ui.edit.text.select.pageUp" commandName="Select Page Up" description="Select to the top of the page" category="_-_C3aj9FEemAIuQJ4if3DA"/>
   <commands xmi:id="_-_C0HT9FEemAIuQJ4if3DA" elementId="org.eclipse.ui.edit.text.toggleWordWrap" commandName="Toggle Word Wrap" description="Toggle word wrap in the current text editor" category="_-_C3ZT9FEemAIuQJ4if3DA"/>
