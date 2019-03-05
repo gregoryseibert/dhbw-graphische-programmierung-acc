@@ -5,6 +5,8 @@ static class ACC {
 	boolean temp;
 	boolean res;
 	real output;
+	characteristic real c = 0.0;
+	real v;
 
 	@generated("blockdiagram")
 	@thread

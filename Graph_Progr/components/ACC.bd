@@ -3,4 +3,16 @@ blockdiagramSpecification Main {
 	methodBody calc {
 		outPin active
 	}
+	simpleIdentifier c at (621, 115) {
+		label at (0, -1)
+		outPin sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier v at (651, 75) {
+		label at (0, -1)
+		inPin outPin sequenceCall {
+			inPin
+		}
+	}
 }
