@@ -1,8 +1,8 @@
 package components;
 
 class ACC {
-	const real speedTolerance = 0.05;
-	const real accPedPosition = 50.0;
+	const real speedTolerance = 0.01;
+	const real accPedPosition = 100.0;
 	real prevGaspedPosition;
 	real prevBrakepedPosition;
 	real accGaspedPosition;
@@ -15,6 +15,8 @@ class ACC {
 		if(!isActive) {
 			this.prevBrakepedPosition = brakepedPosition;
 			this.prevGaspedPosition = gaspedPosition;
+			this.accBrakepedPosition = brakepedPosition;
+			this.accGaspedPosition = gaspedPosition;
 		
 			return;
 		}
