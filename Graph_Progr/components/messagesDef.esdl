@@ -24,3 +24,12 @@ data interface accMomentumMessage {
 	
 }
 
+data interface mes_accState {
+	
+	boolean active = false;
+}
+
+data interface mes_crashDetect {
+	
+	boolean crash = false;
+}
